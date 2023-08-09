@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>猎图Blog</title>
+  
+  <subtitle>小站主要用于分享提供免费ppt素材,ppt教程,ppt模板,ppt免费下载等</subtitle>
+  <link href="https://b.51lietu.com/atom.xml" rel="self"/>
+  
+  <link href="https://b.51lietu.com/"/>
+  <updated>2023-08-09T03:32:47.418Z</updated>
+  <id>https://b.51lietu.com/</id>
+  
+  <author>
+    <name>xzdesk</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>V2ray 安装配置</title>
+    <link href="https://b.51lietu.com/2023/08/08/f82860c36df6/"/>
+    <id>https://b.51lietu.com/2023/08/08/f82860c36df6/</id>
+    <published>2023-08-08T15:53:57.000Z</published>
+    <updated>2023-08-09T03:32:47.418Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="V2ray配置"><a href="#V2ray配置" class="headerlink" title="V2ray配置"></a>V2ray配置</h2><blockquote><p>参考网址：<br>V2Ray官网：<a href="https://www.v2fly.org/">https://www.v2fly.org/</a><br>一键安装最新内核并开启 BBR 脚本：<a href="https://teddysun.com/489.html">https://teddysun.com/489.html</a><br>V2Ray 一键安装脚本：<a href="https://github.com/233boy/v2ray">https://github.com/233boy/v2ray</a></p></blockquote><h3 id="Ubuntu-Centos7-安装可能会失败-多尝试几次一般会成功"><a href="#Ubuntu-Centos7-安装可能会失败-多尝试几次一般会成功" class="headerlink" title="Ubuntu &amp;&amp; Centos7 (安装可能会失败,多尝试几次一般会成功)"></a>Ubuntu &amp;&amp; Centos7 (安装可能会失败,多尝试几次一般会成功)</h3><pre><code class="bash">yum update -y &amp;&amp; yum install curl -y# root权限执行bash &lt;(curl -s -L https://git.io/v2ray.sh)# 配置信息使用协议: VMess-TCP-------------- VMess-TCP-14561.json -------------协议 (protocol)     = vmess地址 (address)         = 8.219.146.32端口 (port)         = 14561用户ID (id)         = 63d897d2-ed71-4312-bf68-18f9204ef62c传输协议 (network)     = tcp伪装类型 (type)     = none # 安装BBR加速wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh &amp;&amp; chmod +x bbr.sh &amp;&amp; ./bbr.sh  # 安装完成后，根据提示按回车键重启服务器，输入以下命令查看是否最新内核TCP BBRuname -r # 检查是否开启bbr加速sysctl net.ipv4.tcp_available_congestion_controlsysctl net.ipv4.tcp_congestion_control# 执行以下命令查看BBR是否已开启lsmod | grep bbr</code></pre><p><img src="/img/f82860c36df6-1.png" alt="V2ray安装截图"><br><img src="/img/f82860c36df6-2.png" alt="V2ray配置截图"></p><h3 id="桌面端下载"><a href="#桌面端下载" class="headerlink" title="桌面端下载"></a>桌面端下载</h3><p><a href="http://back.meimg.com/V2rayN_Setup.zip" target="_blank">V2rayN Windows</a><br><a href="http://back.meimg.com/V2RayX_Macos.app.zip" target="_blank">V2RayX Mac </a><br><a href="http://back.meimg.com/v2rayNG_Android.zip" target="_blank">v2rayNG Android</a></p><h3 id="端口转发"><a href="#端口转发" class="headerlink" title="端口转发"></a>端口转发</h3><pre><code class="bash"># 运行以下脚本安 装命令wget --no-check-certificate -O gost.sh https://raw.githubusercontent.com/KANIKIG/Multi-EasyGost/master/gost.sh &amp;&amp; chmod +x gost.sh &amp;&amp; ./gost.sh# 管理操作,执行脚本,回车./gost.sh</code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;V2ray配置&quot;&gt;&lt;a href=&quot;#V2ray配置&quot; class=&quot;headerlink&quot; title=&quot;V2ray配置&quot;&gt;&lt;/a&gt;V2ray配置&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;参考网址：&lt;br&gt;V2Ray官网：&lt;a href=&quot;https://www</summary>
+      
+    
+    
+    
+    <category term="centos" scheme="https://b.51lietu.com/categories/centos/"/>
+    
+    <category term="v2ray" scheme="https://b.51lietu.com/categories/centos/v2ray/"/>
+    
+    
+    <category term="centos7" scheme="https://b.51lietu.com/tags/centos7/"/>
+    
+    <category term="ubuntu" scheme="https://b.51lietu.com/tags/ubuntu/"/>
+    
+    <category term="v2ray" scheme="https://b.51lietu.com/tags/v2ray/"/>
+    
+    <category term="翻墙" scheme="https://b.51lietu.com/tags/%E7%BF%BB%E5%A2%99/"/>
+    
+    <category term="vpn" scheme="https://b.51lietu.com/tags/vpn/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mysql配置项常用查询</title>
+    <link href="https://b.51lietu.com/2023/08/01/5cfc604252b9/"/>
+    <id>https://b.51lietu.com/2023/08/01/5cfc604252b9/</id>
+    <published>2023-08-01T01:45:57.000Z</published>
+    <updated>2023-08-09T03:32:47.417Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="常用配置项查询"><a href="#常用配置项查询" class="headerlink" title="常用配置项查询"></a>常用配置项查询</h2><h3 id="开启binlog日志"><a href="#开启binlog日志" class="headerlink" title="开启binlog日志"></a>开启binlog日志</h3><pre><code class="conf"># 编辑文件vim /etc/my.cnf# 写入[mysqld]server-id=1log-bin=mysql-binbinlog_format=MIXED</code></pre><pre><code>Mysql复制主要有三种方式：基于SQL语句的复制(statement-based replication, SBR)，基于行的复制(row-based replication, RBR)，混合模式复制(mixed-based replication, MBR)。对应的，binlog的格式也有三种：STATEMENT，ROW，MIXED。1、STATEMENT模式（SBR）每一条会修改数据的sql语句会记录到binlog中。优点是并不需要记录每一条sql语句和每一行的数据变化，减少了binlog日志量，节约IO，提高性能。缺点是在某些情况下会导致master-slave中的数据不一致(如sleep()函数， last_insert_id()，以及user-defined functions(udf)等会出现问题)2、ROW模式（RBR）不记录每条sql语句的上下文信息，仅需记录哪条数据被修改了，修改成什么样了。而且不会出现某些特定情况下的存储过程、或function、或trigger的调用和触发无法被正确复制的问题。缺点是会产生大量的日志，尤其是alter table的时候会让日志暴涨。3、MIXED模式（MBR）以上两种模式的混合使用，一般的复制使用STATEMENT模式保存binlog，对于STATEMENT模式无法复制的操作使用ROW模式保存binlog，MySQL会根据执行的SQL语句选择日志保存方式。</code></pre><h3 id="查看binlog格式"><a href="#查看binlog格式" class="headerlink" title="查看binlog格式"></a>查看binlog格式</h3><pre><code class="sql">mysql&gt; show variables like &#39;BINLOG_FORMAT&#39;;</code></pre><p>修改binlog格式</p><pre><code># 编辑文件vim /etc/my.cnf# 写入[mysqld]binlog_format=row# 在MySQL命令行执行mysql&gt; set global binlog_format=ROW;</code></pre><h3 id="查看默认的日志保存天数"><a href="#查看默认的日志保存天数" class="headerlink" title="查看默认的日志保存天数"></a>查看默认的日志保存天数</h3><pre><code class="sql">/* 0-表示永不过期 */mysql&gt; show variables like &#39;%expire_logs_days%&#39;;</code></pre><p>设置为7天有效期(修改配置文件)</p><pre><code class="conf"># 编辑文件vim /etc/my.cnf# 写入[mysqld]expire_logs_days=7</code></pre><h3 id="常用sql命令"><a href="#常用sql命令" class="headerlink" title="常用sql命令"></a>常用sql命令</h3><pre><code class="sql">/* 查看binlog列表 */mysql&gt; show binary logs;/* 查看 server_id  */mysql&gt; show variables like &#39;server_id&#39;;/* 查看binlog, 确认 log_bin 为 ON  */mysql&gt; show variables like &#39;log_%&#39;;/* 查询binglog同步模式  */mysql&gt; show variables like &#39;BINLOG_FORMAT&#39;;/* 查询mysql服务现在正在做什么 */mysql&gt; show processlist;/* 查看正在写入的binlog文件 */mysql&gt; show master status \G</code></pre><blockquote><p>show processlist结果参数：</p><ul><li>User信息可以知道 是哪个用户链接进来的</li><li>ID作为紧急情况下 kill的 pid</li><li>Host 可以统计出 客户端链接的ip信息</li><li>db 提供操作的数据库</li><li>Command 类型状态</li><li>Time 状态执行时间，除去Sleep情况，操作10S 以上就要注意了</li><li>State 当前SQL语句状态，能判断出是否穷主</li><li>Info 具体执行的SQL ，通过语句进行优化。</li></ul></blockquote><h3 id="查看某个时间段的sql操作"><a href="#查看某个时间段的sql操作" class="headerlink" title="查看某个时间段的sql操作"></a>查看某个时间段的sql操作</h3><pre><code class="bash"># idk_base 是库名, 需要进入到binlog文件所在的目录mysqlbinlog --base64-output=decode-rows --start-datetime=&#39;2022-11-09 10:48:40&#39; --stop-datetime=&#39;2022-11-09 10:49:00&#39; -v -d idk_base binlog.000009</code></pre><h3 id="关闭binlog"><a href="#关闭binlog" class="headerlink" title="关闭binlog"></a>关闭binlog</h3><pre><code class="conf"># 编辑文件vim /etc/my.cnf# 写入[mysqld]disable-log-bin</code></pre><blockquote><p>注意：修改配置文件后一定要重启mysql服务</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;常用配置项查询&quot;&gt;&lt;a href=&quot;#常用配置项查询&quot; class=&quot;headerlink&quot; title=&quot;常用配置项查询&quot;&gt;&lt;/a&gt;常用配置项查询&lt;/h2&gt;&lt;h3 id=&quot;开启binlog日志&quot;&gt;&lt;a href=&quot;#开启binlog日志&quot; class=&quot;head</summary>
+      
+    
+    
+    
+    <category term="mysql" scheme="https://b.51lietu.com/categories/mysql/"/>
+    
+    
+    <category term="mysql" scheme="https://b.51lietu.com/tags/mysql/"/>
+    
+    <category term="常用查询" scheme="https://b.51lietu.com/tags/%E5%B8%B8%E7%94%A8%E6%9F%A5%E8%AF%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mysql慢日志查看</title>
+    <link href="https://b.51lietu.com/2023/08/01/61cd8ff88fef/"/>
+    <id>https://b.51lietu.com/2023/08/01/61cd8ff88fef/</id>
+    <published>2023-08-01T00:27:54.000Z</published>
+    <updated>2023-08-09T03:32:47.417Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="查询慢查询日志功能状态"><a href="#查询慢查询日志功能状态" class="headerlink" title="查询慢查询日志功能状态"></a>查询慢查询日志功能状态</h3><p>默认情况下，慢查询日志功能是关闭的。可以通过以下命令查看是否开启慢查询日志功能。命令和执行过程如下：</p><pre><code class="mysql">mysql&gt; SHOW VARIABLES LIKE &#39;slow_query%&#39;;mysql&gt; SHOW VARIABLES LIKE &#39;long_query_time&#39;;</code></pre><blockquote><p>slow_query_log： 慢查询开启状态<br>slow_query_log_file： 慢查询日志存放的位置（一般设置为 MySQL 的数据存放目录）<br>long_query_time： 查询超过多少秒才记录</p></blockquote><h3 id="启动和设置慢查询日志"><a href="#启动和设置慢查询日志" class="headerlink" title="启动和设置慢查询日志"></a>启动和设置慢查询日志</h3><p>可以通过 log-slow-queries 选项开启慢查询日志。通过 long_query_time 选项来设置时间值，时间以秒为单位。如果查询时间超过了这个时间值，这个查询语句将被记录到慢查询日志。<br>配置文件方式</p><pre><code class="conf">vim /etc/my.cnf# 增加[mysqld]log-slow-queries=/data/mysql/slow.loglong_query_time=5# log-slow-queries 参数指定慢查询日志的存储路径，如果是相对路径，慢查询日志将存储到 MySQL 数据库的数据文件夹下。如果不指定文件名，默认文件名为 hostname-slow.log，hostname 是 MySQL 服务器的主机名。# long_query_time 参数是设定的时间值，该值的单位是秒。如果不设置 long_query_time 选项，默认时间为 10 秒。</code></pre><p>sql命令方式</p><pre><code class="sql">mysql&gt; SET GLOBAL slow_query_log=ON/OFF;mysql&gt; SET GLOBAL long_query_time=5;</code></pre><h3 id="删除慢查询日志"><a href="#删除慢查询日志" class="headerlink" title="删除慢查询日志"></a>删除慢查询日志</h3><p>慢查询日志的删除方法与通用日志的删除方法是一样的。可以使用 mysqladmin 命令来删除。也可以使用手工方式来删除。mysqladmin 命令的语法如下：</p><pre><code class="base">mysqladmin -uroot -p flush-logs</code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;查询慢查询日志功能状态&quot;&gt;&lt;a href=&quot;#查询慢查询日志功能状态&quot; class=&quot;headerlink&quot; title=&quot;查询慢查询日志功能状态&quot;&gt;&lt;/a&gt;查询慢查询日志功能状态&lt;/h3&gt;&lt;p&gt;默认情况下，慢查询日志功能是关闭的。可以通过以下命令查看是否开启慢查</summary>
+      
+    
+    
+    
+    <category term="centos" scheme="https://b.51lietu.com/categories/centos/"/>
+    
+    <category term="mysql" scheme="https://b.51lietu.com/categories/mysql/"/>
+    
+    <category term="mysql" scheme="https://b.51lietu.com/categories/centos/mysql/"/>
+    
+    <category term="慢日志" scheme="https://b.51lietu.com/categories/mysql/%E6%85%A2%E6%97%A5%E5%BF%97/"/>
+    
+    
+    <category term="centos7" scheme="https://b.51lietu.com/tags/centos7/"/>
+    
+    <category term="mysql" scheme="https://b.51lietu.com/tags/mysql/"/>
+    
+    <category term="慢日志" scheme="https://b.51lietu.com/tags/%E6%85%A2%E6%97%A5%E5%BF%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Docker搭建mysql5.7</title>
+    <link href="https://b.51lietu.com/2023/07/31/5b2a1c6c7e4a/"/>
+    <id>https://b.51lietu.com/2023/07/31/5b2a1c6c7e4a/</id>
+    <published>2023-07-30T16:37:54.000Z</published>
+    <updated>2023-08-09T03:32:47.417Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="mysql配置文件"><a href="#mysql配置文件" class="headerlink" title="mysql配置文件"></a>mysql配置文件</h2><pre><code class="conf">[client]#password= your_passwordport= 3306socket= /tmp/mysql.sock[mysqld]port= 3306socket= /tmp/mysql.sockdatadir = /www/server/datadefault_storage_engine = InnoDBperformance_schema_max_table_instances = 400table_definition_cache = 400skip-external-lockingkey_buffer_size = 64Mmax_allowed_packet = 100Gtable_open_cache = 256sort_buffer_size = 1Mnet_buffer_length = 4Kread_buffer_size = 1Mread_rnd_buffer_size = 256Kmyisam_sort_buffer_size = 16Mthread_cache_size = 32query_cache_size = 32Mtmp_table_size = 64Msql-mode=NO_ENGINE_SUBSTITUTION,STRICT_TRANS_TABLESexplicit_defaults_for_timestamp = true#skip-name-resolvemax_connections = 500max_connect_errors = 100open_files_limit = 65535log-bin=mysql-binbinlog_format=mixedserver-id = 100expire_logs_days = 10slow_query_log=1slow-query-log-file=/www/server/data/mysql-slow.loglong_query_time=3#log_queries_not_using_indexes=onearly-plugin-load = &quot;&quot;innodb_data_home_dir = /www/server/datainnodb_data_file_path = ibdata1:10M:autoextendinnodb_log_group_home_dir = /www/server/datainnodb_buffer_pool_size = 256Minnodb_log_file_size = 128Minnodb_log_buffer_size = 32Minnodb_flush_log_at_trx_commit = 1innodb_lock_wait_timeout = 50innodb_max_dirty_pages_pct = 90innodb_read_io_threads = 1innodb_write_io_threads = 1[mysqldump]quickmax_allowed_packet = 500M[mysql]no-auto-rehash[myisamchk]key_buffer_size = 64Msort_buffer_size = 1Mread_buffer = 2Mwrite_buffer = 2M[mysqlhotcopy]interactive-timeout</code></pre><h2 id="创建mysql-compose-yml文件"><a href="#创建mysql-compose-yml文件" class="headerlink" title="创建mysql-compose.yml文件"></a>创建mysql-compose.yml文件</h2><pre><code class="yml">vim mysql-compose.yml# 文件内容version: &#39;3&#39;services:  # 创建容器  master_mysql57:    container_name: &#39;master_mysql57&#39; # 容器名称    image: mysql:5.7 # 镜像名称    hostname: master_mysql57    privileged: true # 特殊权限,让容器拥有root权限    # restart后面的参数：    # no 默认策略，在容器退出时不重启容器    # on-failure 在容器非正常退出时（退出状态非0），才会重启容器    # on-failure:n 在容器非正常退出时重启容器，最多重启n次    # always docker启动,容器自动重启,在容器退出时总是重启容器    restart: always    ports:      - &#39;3316:3306&#39; # Sphinx默认端口    volumes:      - /www/wwwroot/:/www/wwwroot:rw      # - F:/www/wwwroot/:/www/wwwroot:rw    environment:      # environment 和 Dockerfile 中的 ENV 指令一样会把变量一直保存在镜像、容器中，类似 docker run -e 的效果。设置容器的环境变量      - container=docker      - TZ=Asia/Shanghai      - MYSQL_ROOT_PASSWORD=mysql123456    command: [&#39;mysqld&#39;, &#39;--character-set-server=utf8mb4&#39;, &#39;--collation-server=utf8mb4_unicode_ci&#39;]  # 创建容器  slave_mysql57:    container_name: &#39;slave_mysql57&#39; # 容器名称    image: mysql:5.7 # 镜像名称    hostname: slave_mysql57    privileged: true # 特殊权限,让容器拥有root权限    # restart后面的参数：    # no 默认策略，在容器退出时不重启容器    # on-failure 在容器非正常退出时（退出状态非0），才会重启容器    # on-failure:n 在容器非正常退出时重启容器，最多重启n次    # always docker启动,容器自动重启,在容器退出时总是重启容器    restart: always    ports:      - &#39;3318:3306&#39; # Sphinx默认端口    volumes:      - /www/wwwroot/:/www/wwwroot:rw      # - F:/www/wwwroot/:/www/wwwroot:rw    environment:      # environment 和 Dockerfile 中的 ENV 指令一样会把变量一直保存在镜像、容器中，类似 docker run -e 的效果。设置容器的环境变量      - container=docker      - TZ=Asia/Shanghai      - MYSQL_ROOT_PASSWORD=mysql123456    command: [&#39;mysqld&#39;, &#39;--character-set-server=utf8mb4&#39;, &#39;--collation-server=utf8mb4_unicode_ci&#39;]</code></pre><h3 id="容器管理"><a href="#容器管理" class="headerlink" title="容器管理"></a>容器管理</h3><pre><code class="base"># 运行容器docker run -p 5306:3306 --name mysql57 -v /docker/mysql/var/log:/var/log/mysql -v /docker/mysql/var/data:/var/lib/mysql -v /docker/mysql/var/conf:/etc/mysql/conf.d -e MYSQL_ROOT_PASSWORD=D7txumqc2b! -d mysql:5.7 --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci# 启动, 使用默认docker-compose.yml名称, 可以不加yml文件docker-compose -f mysql-compose.yml up -d # 停止docker-compose -f mysql-compose.yml stop# 登录mysql容器docker exec -it master_mysql57 /bin/bash# 登录mysqlmysql -u root -p# 查看mysql字符集mysql&gt; show variables like &#39;character_set_%&#39;;</code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;mysql配置文件&quot;&gt;&lt;a href=&quot;#mysql配置文件&quot; class=&quot;headerlink&quot; title=&quot;mysql配置文件&quot;&gt;&lt;/a&gt;mysql配置文件&lt;/h2&gt;&lt;pre&gt;&lt;code class=&quot;conf&quot;&gt;[client]
+#password	= </summary>
+      
+    
+    
+    
+    <category term="centos" scheme="https://b.51lietu.com/categories/centos/"/>
+    
+    <category term="docker" scheme="https://b.51lietu.com/categories/centos/docker/"/>
+    
+    <category term="docker" scheme="https://b.51lietu.com/categories/docker/"/>
+    
+    <category term="mysql" scheme="https://b.51lietu.com/categories/docker/mysql/"/>
+    
+    
+    <category term="centos7" scheme="https://b.51lietu.com/tags/centos7/"/>
+    
+    <category term="docker" scheme="https://b.51lietu.com/tags/docker/"/>
+    
+    <category term="mysql5.7" scheme="https://b.51lietu.com/tags/mysql5-7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mysql主从复制</title>
+    <link href="https://b.51lietu.com/2023/07/28/4300e06c46b9/"/>
+    <id>https://b.51lietu.com/2023/07/28/4300e06c46b9/</id>
+    <published>2023-07-28T05:27:54.000Z</published>
+    <updated>2023-08-09T03:32:47.417Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="简洁"><a href="#简洁" class="headerlink" title="简洁"></a>简洁</h3><table><thead><tr><th>数据库</th><th>Docker容器</th></tr></thead><tbody><tr><td>MySQL Master</td><td>master_mysql57</td></tr><tr><td>MySQL Slave</td><td>slave_mysql57</td></tr></tbody></table><p>参考文章<br><a href="/2023/07/31/5b2a1c6c7e4a/" target="_blank">Docker搭建mysql5.7</a><br><a href="/2023/08/01/5cfc604252b9/" target="_blank">Mysql配置项常用查询</a></p><h3 id="Master-主服务器配置"><a href="#Master-主服务器配置" class="headerlink" title="Master 主服务器配置"></a>Master 主服务器配置</h3><pre><code class="bash"># 修改主服务器 my.cnf 配置vim /etc/my.cnf[mysqld]log-bin=mysql-bin       # bin日志文件名server-id=10001         # 服务ID,不能和从服务器重复binlog_format=row       # 数据同步模式: STATEMENT、ROW、MIXED(混合模式) ------ 待确定binlog-do-db=testdb     # 设置同步指定的数据库binlog-ignore-db=mysql  # 设置忽略同步的库binlog-ignore-db=information_schemabinlog-ignore-db=performance_schemabinlog-ignore-db=sys# 登录Mysql  root:mysql123456mysql -u root -p # 查询数据库mysql&gt; show databases;# 进入mysql库mysql&gt; use mysql;# 创建用户并授权mysql&gt; create user &#39;salve&#39;@&#39;%&#39; identified by &#39;5Dnw3RkWk8xhbsER&#39;;    # 创建用户mysql&gt; grant replication slave on *.* to &#39;salve&#39;@&#39;%&#39;;    # 授权mysql&gt; flush privileges;   # 刷新权限# # 授权salve用户操作testdb(select,insert,update,delete)mysql&gt; grant select,insert,update,delete on &#39;testdb&#39;.* to &#39;salve&#39;@&#39;%&#39;;# 创建错了,可以使用下面命令删除mysql&gt; drop user &quot;salve&quot;@&quot;%&quot;;# 查看添加的用户信息mysql&gt; select user,host from mysql.user;# 测试刚创建的用户是否正常mysql&gt; mysql -u salve -p -h 192.168.2.228 -P 3306# 锁表，禁止写入，当前窗口不能退出，这时候开启另一个终端继续操作mysql&gt; flush tables with read lock;# 查看master状态, 不管执行什么命令，\G后不用加分号, 否则提示No query specified 错误mysql&gt; show master status \G# 取消锁表mysql&gt; unlock tables;</code></pre><h3 id="Salve-从服务器配置"><a href="#Salve-从服务器配置" class="headerlink" title="Salve 从服务器配置"></a>Salve 从服务器配置</h3><pre><code class="bash"># 修改主服务器 my.cnf 配置vim /etc/my.cnf[mysqld]log-bin=slave-bin       # 开启二进制日志server-id=50001         # 服务ID,不能和从服务器重复read_only=ON            # 设置从数据库只读（对root用户无效）relay_log=relay-log     # relay log的文件路径relay_log_index=relay-log.index # 默认值hostname-relay-bin.indexreplicate_do_db=testdbreplicate_ignore_db=information_schemareplicate_ignore_db=performance_schemareplicate_ignore_db=mysqlreplicate_ignore_db=sys# 重启Mysql服务# 登录Mysql  root:mysql123456mysql -u root -p # 查看 server_idmysql&gt; show variables like &#39;server_id&#39;;# 配置从数据库 host最好设置IP或者容器名称mysql&gt; change master to master_host=&#39;master_mysql57&#39;,master_user=&#39;salve&#39;,master_password=&#39;5Dnw3RkWk8xhbsER&#39;,master_log_file=&#39;mysql-bin.000001&#39;,master_log_pos=154;# 启动主从同步进程mysql&gt; start slave;# 检查状态mysql&gt; show slave status \G</code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;简洁&quot;&gt;&lt;a href=&quot;#简洁&quot; class=&quot;headerlink&quot; title=&quot;简洁&quot;&gt;&lt;/a&gt;简洁&lt;/h3&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;数据库&lt;/th&gt;
+&lt;th&gt;Docker容器&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody</summary>
+      
+    
+    
+    
+    <category term="centos" scheme="https://b.51lietu.com/categories/centos/"/>
+    
+    <category term="mysql" scheme="https://b.51lietu.com/categories/mysql/"/>
+    
+    <category term="mysql" scheme="https://b.51lietu.com/categories/centos/mysql/"/>
+    
+    <category term="主从" scheme="https://b.51lietu.com/categories/mysql/%E4%B8%BB%E4%BB%8E/"/>
+    
+    
+    <category term="centos7" scheme="https://b.51lietu.com/tags/centos7/"/>
+    
+    <category term="mysql" scheme="https://b.51lietu.com/tags/mysql/"/>
+    
+    <category term="主从" scheme="https://b.51lietu.com/tags/%E4%B8%BB%E4%BB%8E/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Php安装RabbitMQ扩展amqp</title>
+    <link href="https://b.51lietu.com/2023/07/28/4a09774f523a/"/>
+    <id>https://b.51lietu.com/2023/07/28/4a09774f523a/</id>
+    <published>2023-07-28T05:17:54.000Z</published>
+    <updated>2023-08-09T03:32:47.417Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="安装扩展"><a href="#安装扩展" class="headerlink" title="安装扩展"></a>安装扩展</h2><h3 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a>安装依赖</h3><pre><code class="bash">yum install libtool autoconf gcc gcc-c cmake librabbitmq-devel librabbitmq</code></pre><h3 id="安装-rabbitmq-c"><a href="#安装-rabbitmq-c" class="headerlink" title="安装 rabbitmq-c"></a>安装 rabbitmq-c</h3><pre><code class="bash"># 查看当前OpenSSL的版本, 查看openssl的最新目录和版本信息openssl version -a# # 必须 OpenSSL &gt;= 1.1.0, CMakeb &gt;= 3.12 到 3.18# https://github.com/alanxz/rabbitmq-c/archive/refs/tags/v0.13.0.tar.gz# # OpenSSL小于1.1.0# wget https://github.com/alanxz/rabbitmq-c/archive/refs/tags/v0.9.0.tar.gz# wget https://github.com/alanxz/rabbitmq-c/archive/v0.9.0.tar.gzwget https://github.com/alanxz/rabbitmq-c/archive/v0.10.0.zipunzip v0.10.0.zip &amp;&amp; cd rabbitmq-c-0.10.0cmake -DCMAKE_INSTALL_PREFIX=/usr/local/rabbitmq-c .cmake --build . --target installln -s /usr/local/rabbitmq-c/lib64 /usr/local/rabbitmq-c/lib</code></pre><h3 id="安装-amqp"><a href="#安装-amqp" class="headerlink" title="安装 amqp"></a>安装 amqp</h3><pre><code class="bash">wget http://pecl.php.net/get/amqp-1.9.4.tgztar zxf amqp-1.9.4.tgzcd amqp-1.9.4.tgz/usr/local/php/bin/phpize# 宝塔多版本需要注意,使用指定版本的php# /www/server/php/74/bin/phpize./configure --with-php-config=/www/server/php/74/bin/php-config --with-amqp --with-librabbitmq-dir=/usr/local/rabbitmq-cmakemake install</code></pre><h3 id="配置amqp扩展"><a href="#配置amqp扩展" class="headerlink" title="配置amqp扩展"></a>配置amqp扩展</h3><pre><code class="bash"># 编辑php.ini文件vi /usr/local/php/etc/php.inivim /www/server/php/74/etc/php.ini# 添加一行extension=/www/server/php/74/lib/php/extensions/no-debug-non-zts-20190902/amqp.so# 重启php</code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;安装扩展&quot;&gt;&lt;a href=&quot;#安装扩展&quot; class=&quot;headerlink&quot; title=&quot;安装扩展&quot;&gt;&lt;/a&gt;安装扩展&lt;/h2&gt;&lt;h3 id=&quot;安装依赖&quot;&gt;&lt;a href=&quot;#安装依赖&quot; class=&quot;headerlink&quot; title=&quot;安装依赖&quot;&gt;&lt;/a</summary>
+      
+    
+    
+    
+    <category term="centos" scheme="https://b.51lietu.com/categories/centos/"/>
+    
+    <category term="rabbitmq" scheme="https://b.51lietu.com/categories/centos/rabbitmq/"/>
+    
+    <category term="php" scheme="https://b.51lietu.com/categories/php/"/>
+    
+    <category term="amqp" scheme="https://b.51lietu.com/categories/php/amqp/"/>
+    
+    
+    <category term="centos7" scheme="https://b.51lietu.com/tags/centos7/"/>
+    
+    <category term="rabbitmq" scheme="https://b.51lietu.com/tags/rabbitmq/"/>
+    
+    <category term="php" scheme="https://b.51lietu.com/tags/php/"/>
+    
+    <category term="amqp" scheme="https://b.51lietu.com/tags/amqp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Lumen使用RabbitMQ</title>
+    <link href="https://b.51lietu.com/2023/07/27/e353013b30cc/"/>
+    <id>https://b.51lietu.com/2023/07/27/e353013b30cc/</id>
+    <published>2023-07-27T05:31:54.000Z</published>
+    <updated>2023-08-09T03:32:47.417Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="简单使用实例"><a href="#简单使用实例" class="headerlink" title="简单使用实例"></a>简单使用实例</h2><pre><code>- 实现消息队列</code></pre><h3 id="lumen-实现消息队列"><a href="#lumen-实现消息队列" class="headerlink" title="lumen 实现消息队列"></a>lumen 实现消息队列</h3><pre><code class="bash"># 安装依赖包composer require vladimir-yuldashev/laravel-queue-rabbitmq# 安装依赖包composer require bschmitt/laravel-amqp</code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;简单使用实例&quot;&gt;&lt;a href=&quot;#简单使用实例&quot; class=&quot;headerlink&quot; title=&quot;简单使用实例&quot;&gt;&lt;/a&gt;简单使用实例&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;- 实现消息队列
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;lumen-实现消息队列&quot;&gt;&lt;</summary>
+      
+    
+    
+    
+    <category term="lumen" scheme="https://b.51lietu.com/categories/lumen/"/>
+    
+    <category term="rabbitmq" scheme="https://b.51lietu.com/categories/lumen/rabbitmq/"/>
+    
+    
+    <category term="rabbitmq" scheme="https://b.51lietu.com/tags/rabbitmq/"/>
+    
+    <category term="lumen" scheme="https://b.51lietu.com/tags/lumen/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Centos7安装RabbitMQ</title>
+    <link href="https://b.51lietu.com/2023/07/27/b3c9ba929fff/"/>
+    <id>https://b.51lietu.com/2023/07/27/b3c9ba929fff/</id>
+    <published>2023-07-27T04:17:54.000Z</published>
+    <updated>2023-08-09T03:32:47.417Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>RabbitMQ是一个开源的AMQP实现，服务器端用Erlang语言编写，支持多种客户端。用于在分布式系统中存储转发消息，在易用性、扩展性、高可用性等方面表现不俗。</p><blockquote><p>特点：</p><ul><li>可靠性</li><li>灵活的路由</li><li>消息集群</li><li>高可用</li><li>插件机制</li><li>多种协议</li><li>多语言客户端</li><li>管理界面</li><li>跟踪机制</li></ul></blockquote><h3 id="安装-erlang"><a href="#安装-erlang" class="headerlink" title="安装 erlang"></a>安装 erlang</h3><pre><code class="bash"># Erlang下载安装wget --content-disposition https://packagecloud.io/rabbitmq/erlang/packages/el/7/erlang-22.3.4.12-1.el7.x86_64.rpm/download.rpm# rpm 包安装yum localinstall erlang-22.3.4.12-1.el7.x86_64.rpm</code></pre><h3 id="安装RabbitMQ"><a href="#安装RabbitMQ" class="headerlink" title="安装RabbitMQ"></a>安装RabbitMQ</h3><pre><code class="bash"># RabbitMQ 下载安装wget --content-disposition https://packagecloud.io/rabbitmq/rabbitmq-server/packages/el/7/rabbitmq-server-3.8.13-1.el7.noarch.rpm/download.rpm# 导入Keyrpm --import https://www.rabbitmq.com/rabbitmq-release-signing-key.asc# 安装yum localinstall rabbitmq-server-3.8.13-1.el7.noarch.rpm# 启动服务systemctl start rabbitmq-server# 设置开机自动启动systemctl enable rabbitmq-server</code></pre><h3 id="配置RabbitMQ-Web管理界面"><a href="#配置RabbitMQ-Web管理界面" class="headerlink" title="配置RabbitMQ Web管理界面"></a>配置RabbitMQ Web管理界面</h3><pre><code class="bash"># 默认情况下，是没有安装web端的客户端插件，需要安装才可以生效rabbitmq-plugins enable rabbitmq_management# 安装完毕以后, 重启服务即可systemctl restart rabbitmq-server# 添加防火墙规则firewall-cmd --zone=public --add-port=15672/tcp --permanentsystemctl restart firewalld# 新增用户(admin) 密码(admin123)rabbitmqctl add_user admin admin123# 设置用户(admin)分配操作权限rabbitmqctl set_user_tags admin administrator</code></pre><h3 id="登录管理界面"><a href="#登录管理界面" class="headerlink" title="登录管理界面"></a>登录管理界面</h3><p><a href="http://ip:15672/">http://IP:15672/</a>  输入刚创建的用户和密码</p><p><img src="/img/b3c9ba929fff-1.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;RabbitMQ是一个开源的AMQP实现，服务器端用Erlang语言编写，支持多种客户端。用于在分布式系统中存储转发消息，在易用性、扩展性、</summary>
+      
+    
+    
+    
+    <category term="centos" scheme="https://b.51lietu.com/categories/centos/"/>
+    
+    <category term="rabbitmq" scheme="https://b.51lietu.com/categories/centos/rabbitmq/"/>
+    
+    
+    <category term="centos7" scheme="https://b.51lietu.com/tags/centos7/"/>
+    
+    <category term="erlang" scheme="https://b.51lietu.com/tags/erlang/"/>
+    
+    <category term="rabbitmq" scheme="https://b.51lietu.com/tags/rabbitmq/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Centos7安装Scrapy</title>
+    <link href="https://b.51lietu.com/2023/07/26/d9d1d9301db0/"/>
+    <id>https://b.51lietu.com/2023/07/26/d9d1d9301db0/</id>
+    <published>2023-07-25T17:17:54.000Z</published>
+    <updated>2023-08-09T03:32:47.417Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Scrapy-使用实例"><a href="#Scrapy-使用实例" class="headerlink" title="Scrapy 使用实例"></a>Scrapy 使用实例</h2><pre><code class="bash"># 创建 scrapy 工程scrapy startproject meimg# 在 meimg 工程中写一个爬虫文件cd meimgscrapy genspider pixabay pixabay.com# 查看项目爬虫列表scrapy list# 运行爬虫scrapy crawl demoscrapy crawl ppt_1ppt --nolog  # 不打印日志# 测试scrapy shell &quot;https://pixabay.com&quot; -s USER_AGENT=&#39;Mozills/5.0&#39;curl https://pixabay.com -d project=myproject -d spider=spider1 -d part=1https://img.1ppt.com/uploads/allimg/2306/1_230613164831_1.jpghttps://ppt.1ppt.com/uploads/soft/2306/1-230613164Q5.zip# 带head头请求scrapy shell  -s USER_AGENT=&quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36&quot; https://www.1ppt.com/plus/download.php?open=0&amp;aid=31928&amp;cid=3</code></pre><h2 id="Scrapy-安装"><a href="#Scrapy-安装" class="headerlink" title="Scrapy 安装"></a>Scrapy 安装</h2><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><pre><code class="python"># 升级pippip install --upgrade pip# 安装scrapypip install scrapy</code></pre><h3 id="常用扩展安装"><a href="#常用扩展安装" class="headerlink" title="常用扩展安装"></a>常用扩展安装</h3><pre><code># 安装MongoDBpip install pymongo# 安装Mysqlpip install PyMySQL# 安装Redispip install redis# 模拟浏览器行为抓取pip install selenium# 安装阿里云OSS2模块pip install oss2# 安装七牛pip install qiniu# 安装简繁字体转换模块pip install zhconv# 安装图像处理模块py3pip install Pillow# 处理pptx文件扩展pip install python-pptx# 安装imagemagickyum install libjpeg libjpeg-devel libpng libpng-devel libtiff libtiff-devel libungif libungif-devel freetype zlibyum install ImageMagickconvert -version</code></pre><h3 id="安装libreoffice"><a href="#安装libreoffice" class="headerlink" title="安装libreoffice"></a>安装libreoffice</h3><pre><code class="bash"># 官网下载地址https://www.libreoffice.org/download/download-libreoffice/# 下载安装wget https://download.documentfoundation.org/libreoffice/stable/7.5.4/rpm/x86_64/LibreOffice_7.5.4_Linux_x86-64_rpm.tar.gztar -zxvf LibreOffice_7.5.4_Linux_x86-64_rpm.tar.gzcd LibreOffice_7.5.4.2_Linux_x86-64_rpm/RPMSyum localinstall *.rpmyum install libreoffice-headlessyum install libreoffice-writer# 查看版本libreoffice --version# 安装字体支持yum -y install cups-libs fontconfig ibus# 在/usr/share目录就可以看到fonts和fontconfig目录了ls /usr/share |grep font# 复制windowns字体(C:\Windows\Fonts)# 首先在/usr/share/fonts目录下新建一个目录chinese,并将中文字体上传至/usr/share/fonts/chinese目录下mkdir /usr/share/fonts/chinesechmod -R 755 /usr/share/fonts/chinese# 基础字体库wget http://back.meimg.com/fonts.zip# 修改字体文件vim /etc/fonts/fonts.confyum -y install ttmkfdir# 然后执行ttmkfdir命令即可ttmkfdir -e /usr/share/X11/fonts/encodings/encodings.dir# 刷新内存中的字体缓存，这样就不用reboot重启了fc-cache# 看一下字体列表fc-list# 导出实例docx/usr/bin/libreoffice7.4 --headless --language=zh-CN --invisible --convert-to pdf 11.pptx --outdir ./</code></pre><h2 id="常见问题处理"><a href="#常见问题处理" class="headerlink" title="常见问题处理"></a>常见问题处理</h2><h3 id="OpenSSL-升级"><a href="#OpenSSL-升级" class="headerlink" title="OpenSSL 升级"></a>OpenSSL 升级</h3><p>查看版本</p><pre><code class="bash"># 查看当前OpenSSL的版本openssl versionopenssl version -a# 查看python使用ssl版本python -c &quot;import ssl; print(ssl.OPENSSL_VERSION)&quot;# 查看OpenSSL的安装位置which openSSL</code></pre><p>安装新版本</p><pre><code class="bash"># 直接到官网下载wget https://www.openssl.org/source/openssl-1.1.1n.tar.gzwget https://www.openssl.org/source/openssl-1.1.1e.tar.gz# 解压tar -zxvf openssl-1.1.1n.tar.gz# 进入到解压后的目录下cd openssl-1.1.1n./config --prefix=/usr/local/openssl no-zlibmake &amp;&amp; make install# 备份原有文件mv /usr/bin/openssl /usr/bin/openssl.bakmv /usr/include/openssl/ /usr/include/openssl.bak# 创建软连接ln -s /usr/local/openssl/include/openssl /usr/include/opensslln -s /usr/local/openssl/lib/libssl.so.1.1 /usr/local/lib64/libssl.soln -s /usr/local/openssl/bin/openssl /usr/bin/opensslecho &quot;/usr/local/openssl/lib&quot; &gt;&gt; /etc/ld.so.conf# 安装 2.7版本LD_RUN_PATH=&quot;/usr/local/openssl/lib&quot; LDFLAGS=&quot;-L/usr/local/openssl/lib&quot; CPPFLAGS=&quot;-I/usr/local/openssl/include&quot; CFLAGS=&quot;-I/usr/local/openssl/include&quot; CONFIGURE_OPTS=&quot;--with-openssl=/usr/local/openssl&quot; pyenv install 2.7.12 ln -s /usr/local/openssl/lib/libcrypto.so.1.0.0 /usr/local/openssl/lib/libcrypto.soln -s /usr/local/openssl/lib/libssl.so.1.0.0 /usr/local/openssl/lib/libssl.so# 重新安装python 3.8.0LD_RUN_PATH=&quot;/usr/local/openssl/lib&quot; LDFLAGS=&quot;-L/usr/local/openssl/lib&quot; CPPFLAGS=&quot;-I/usr/local/openssl/include&quot; CFLAGS=&quot;-I/usr/local/openssl/include&quot; CONFIGURE_OPTS=&quot;--with-openssl=/usr/local/openssl&quot; pyenv install 3.8.0</code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;Scrapy-使用实例&quot;&gt;&lt;a href=&quot;#Scrapy-使用实例&quot; class=&quot;headerlink&quot; title=&quot;Scrapy 使用实例&quot;&gt;&lt;/a&gt;Scrapy 使用实例&lt;/h2&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;# 创建 scrapy 工</summary>
+      
+    
+    
+    
+    <category term="centos" scheme="https://b.51lietu.com/categories/centos/"/>
+    
+    <category term="scrapy" scheme="https://b.51lietu.com/categories/centos/scrapy/"/>
+    
+    <category term="python" scheme="https://b.51lietu.com/categories/python/"/>
+    
+    <category term="scrapy" scheme="https://b.51lietu.com/categories/python/scrapy/"/>
+    
+    
+    <category term="centos7" scheme="https://b.51lietu.com/tags/centos7/"/>
+    
+    <category term="python3" scheme="https://b.51lietu.com/tags/python3/"/>
+    
+    <category term="scrapy" scheme="https://b.51lietu.com/tags/scrapy/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Centos7配置selenium+chromedriver</title>
+    <link href="https://b.51lietu.com/2023/07/26/6281c8bbec84/"/>
+    <id>https://b.51lietu.com/2023/07/26/6281c8bbec84/</id>
+    <published>2023-07-25T17:17:54.000Z</published>
+    <updated>2023-08-09T03:32:47.417Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="下载软件"><a href="#下载软件" class="headerlink" title="下载软件"></a>下载软件</h3><pre><code class="bash"># 这个链接会下载最新版chromehttps://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm# chromedriver下载http://npm.taobao.org/mirrors/chromedriver/</code></pre><blockquote><p>安装注意:chromedriver一定要和chrome版本对应，否则会报错</p></blockquote><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><pre><code class="bash"># 安装依赖yum install -y lsbyum install -y libXScrnSaveryum install -y liberation-fonts vulkan-filesystem vulkan# 安装chrome (google-chrome-stable-114.0.5735.1)rpm -ivh google-chrome-stable_current_x86_64.rpmgoogle-chrome --version# 安装chromedriverwget https://registry.npmmirror.com/-/binary/chromedriver/114.0.5735.90/chromedriver_linux64.zipunzip chromedriver_linux64.zipmv chromedriver /usr/bin/chromedriver --version</code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;下载软件&quot;&gt;&lt;a href=&quot;#下载软件&quot; class=&quot;headerlink&quot; title=&quot;下载软件&quot;&gt;&lt;/a&gt;下载软件&lt;/h3&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;# 这个链接会下载最新版chrome
+https://dl.google.com/</summary>
+      
+    
+    
+    
+    <category term="centos" scheme="https://b.51lietu.com/categories/centos/"/>
+    
+    <category term="scrapy" scheme="https://b.51lietu.com/categories/centos/scrapy/"/>
+    
+    <category term="python" scheme="https://b.51lietu.com/categories/python/"/>
+    
+    <category term="scrapy" scheme="https://b.51lietu.com/categories/python/scrapy/"/>
+    
+    
+    <category term="centos7" scheme="https://b.51lietu.com/tags/centos7/"/>
+    
+    <category term="python3" scheme="https://b.51lietu.com/tags/python3/"/>
+    
+    <category term="selenium" scheme="https://b.51lietu.com/tags/selenium/"/>
+    
+    <category term="chromedriver" scheme="https://b.51lietu.com/tags/chromedriver/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Lumen常用数据验证规则</title>
+    <link href="https://b.51lietu.com/2023/07/24/e375deae85ce/"/>
+    <id>https://b.51lietu.com/2023/07/24/e375deae85ce/</id>
+    <published>2023-07-24T08:01:54.000Z</published>
+    <updated>2023-08-09T03:32:47.417Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="常用规则"><a href="#常用规则" class="headerlink" title="常用规则"></a>常用规则</h3><pre><code class="bash">required: 字段不能为空present: 验证的字段必须存在与输入数据中但可以为空integer: 验证的字段必须是整数。string: 验证的字段必须是字符串json: 验证的字段必须是有效的 JSON 字符串。numeric: 验证的字段必须是数字not_in:0 : 不能等于0gt:0 : 大于0gte:0 : 大于等于0lt:0 : 小于0lte:0 : 小于等于0max:value 验证中的字段必须小于或等于value。min:value 验证中的字段必须大于等于valuesize: value验证的字段必须具有与给定值匹配的大小。      对于字符串来说，value 对应于字符数。对于数字来说，value ???好像有问题对应于给定的整数值。      对于数组来说， size 对应的是数组的 count 值。对文件来说，size 对应的是文件大小（单位 kb ）regex: ^[1-9][0-9]+ : 正则验证alpha: 字段必须是字母alpha_dash: 字段可能具有字母。数字，破折号，下划线alpha_num: 字段必须为字母加数字array: 字段必须是一个php数组between:min,max: 验证字段必须在min-max之间boolean: 验证的字段必须能够转换为布尔型in:foo,bar.....: 验证的字段必须包含在给定的值列表中notin: 验证的字段不能在给定列表中in_array: anotherfield验证的字段必须存在于另一个字段（anotherfield）的值中</code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;常用规则&quot;&gt;&lt;a href=&quot;#常用规则&quot; class=&quot;headerlink&quot; title=&quot;常用规则&quot;&gt;&lt;/a&gt;常用规则&lt;/h3&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;required: 字段不能为空
+present: 验证的字段必须存在与输入数据中</summary>
+      
+    
+    
+    
+    <category term="lumen" scheme="https://b.51lietu.com/categories/lumen/"/>
+    
+    
+    <category term="lumen" scheme="https://b.51lietu.com/tags/lumen/"/>
+    
+    <category term="validator" scheme="https://b.51lietu.com/tags/validator/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Lumen队列使用</title>
+    <link href="https://b.51lietu.com/2023/07/24/30ae622b639a/"/>
+    <id>https://b.51lietu.com/2023/07/24/30ae622b639a/</id>
+    <published>2023-07-24T08:01:54.000Z</published>
+    <updated>2023-08-09T03:32:47.417Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="队列使用"><a href="#队列使用" class="headerlink" title="队列使用"></a>队列使用</h2><h3 id="队列配置-config-queue-php"><a href="#队列配置-config-queue-php" class="headerlink" title="队列配置 config\queue.php"></a>队列配置 <code>config\queue.php</code></h3><pre><code class="php">&lt;?phpreturn [    // 配置默认使用connections配置的设备信息    &#39;default&#39; =&gt; env(&#39;QUEUE_DRIVER&#39;, &#39;redis&#39;),    // 设备链接配置    &#39;connections&#39; =&gt; [        &#39;database&#39; =&gt; [            &#39;driver&#39; =&gt; &#39;database&#39;,            &#39;table&#39; =&gt; &#39;jobs&#39;,            &#39;queue&#39; =&gt; &#39;default&#39;,            &#39;expire&#39; =&gt; 60,        ],        &#39;redis&#39; =&gt; [            &#39;driver&#39; =&gt; &#39;redis&#39;,        // 设备            &#39;connection&#39; =&gt; &#39;queue&#39;,    // 链接            &#39;queue&#39; =&gt; &#39;default&#39;,       // 默认队列            &#39;expire&#39; =&gt; 60,             // 过期时间        ],    ],    // 错误信息存储配置    &#39;failed&#39; =&gt; [        &#39;database&#39; =&gt; &#39;mysql&#39;, &#39;table&#39; =&gt; &#39;jobs_failed&#39;,    ],];</code></pre><h3 id="队列继承基础类app-Jobs-Job-php"><a href="#队列继承基础类app-Jobs-Job-php" class="headerlink" title="队列继承基础类app\Jobs\Job.php"></a>队列继承基础类<code>app\Jobs\Job.php</code></h3><pre><code class="php">&lt;?phpnamespace App\Jobs;use Illuminate\Bus\Queueable;use Illuminate\Contracts\Queue\ShouldQueue;use Illuminate\Queue\InteractsWithQueue;use Illuminate\Queue\SerializesModels;abstract class Job implements ShouldQueue&#123;    /*    |--------------------------------------------------------------------------    | Queueable Jobs    |--------------------------------------------------------------------------    |    | This job base class provides a central location to place any logic that    | is shared across all of your jobs. The trait included with the class    | provides access to the &quot;queueOn&quot; and &quot;delay&quot; queue helper methods.    |    */    use InteractsWithQueue, Queueable, SerializesModels;&#125;</code></pre><h3 id="队列生产类app-Jobs-UpdateSucaiPrJob-php"><a href="#队列生产类app-Jobs-UpdateSucaiPrJob-php" class="headerlink" title="队列生产类app\Jobs\UpdateSucaiPrJob.php"></a>队列生产类<code>app\Jobs\UpdateSucaiPrJob.php</code></h3><pre><code class="php">&lt;?phpnamespace App\Jobs;use App\Models\Sucai;use Exception;class UpdateSucaiPrJob extends Job&#123;    protected $data = [];    // 最大失败次数    public $tries = 5;    // 超时设置    public $timeout = 120;    /**     * Create a new job instance.     *     * @return array     */    public function __construct(array $data)    &#123;        // 定义onQueue 执行：        $this-&gt;onQueue(&#39;UpdateSucaiPrQueue&#39;);        // 设置延迟        $this-&gt;delay(0);        $this-&gt;data = $data;    &#125;    /**     * Execute the job.     * 执行命令：php artisan queue:work --daemon --queue=UpdateSucaiPrQueue     *     * @return void     */    public function handle()    &#123;        // 处理队列程序,更新素材展示次数        Sucai::whereIn(&#39;id&#39;, $this-&gt;data)-&gt;increment(&#39;shows&#39;);    &#125;    /**     * 任务失败的处理过程     *     * @param  Exception  $exception     * @return void     */    public function failed(Exception $exception)    &#123;        // 给用户发送任务失败的通知，等等……    &#125;&#125;</code></pre><h3 id="消费队列"><a href="#消费队列" class="headerlink" title="消费队列"></a>消费队列</h3><pre><code class="bash"># 命令行php artisan queue:work --queue=UpdateSucaiPrQueue</code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;队列使用&quot;&gt;&lt;a href=&quot;#队列使用&quot; class=&quot;headerlink&quot; title=&quot;队列使用&quot;&gt;&lt;/a&gt;队列使用&lt;/h2&gt;&lt;h3 id=&quot;队列配置-config-queue-php&quot;&gt;&lt;a href=&quot;#队列配置-config-queue-php&quot; c</summary>
+      
+    
+    
+    
+    <category term="lumen" scheme="https://b.51lietu.com/categories/lumen/"/>
+    
+    
+    <category term="lumen" scheme="https://b.51lietu.com/tags/lumen/"/>
+    
+    <category term="queue" scheme="https://b.51lietu.com/tags/queue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python包管理pip换源</title>
+    <link href="https://b.51lietu.com/2023/07/24/e958592599bf/"/>
+    <id>https://b.51lietu.com/2023/07/24/e958592599bf/</id>
+    <published>2023-07-24T07:53:50.000Z</published>
+    <updated>2023-08-09T03:32:47.417Z</updated>
+    
+    <content type="html"><![CDATA[<p>国内因为墙的问题，pip安装扩展，经常会提示错误或速度很慢，我们可以尝试切换为国内源</p><h3 id="查看当前使用的源信息"><a href="#查看当前使用的源信息" class="headerlink" title="查看当前使用的源信息"></a>查看当前使用的源信息</h3><pre><code class="bash">pip config list</code></pre><h3 id="临时换源"><a href="#临时换源" class="headerlink" title="临时换源"></a>临时换源</h3><pre><code class="bash"># 清华源pip3 install markdown -i https://pypi.tuna.tsinghua.edu.cn/simple# 阿里源pip3 install markdown -i https://mirrors.aliyun.com/pypi/simple/# 腾讯源pip3 install markdown -i http://mirrors.cloud.tencent.com/pypi/simple# 豆瓣源pip3 install markdown -i http://pypi.douban.com/simple/</code></pre><h3 id="永久换源"><a href="#永久换源" class="headerlink" title="永久换源"></a>永久换源</h3><pre><code class="bash"># 清华源pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple# 阿里源pip config set global.index-url https://mirrors.aliyun.com/pypi/simple/# 腾讯源pip config set global.index-url http://mirrors.cloud.tencent.com/pypi/simple# 豆瓣源pip config set global.index-url http://pypi.douban.com/simple/# 换回默认源pip config unset global.index-url</code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;国内因为墙的问题，pip安装扩展，经常会提示错误或速度很慢，我们可以尝试切换为国内源&lt;/p&gt;
+&lt;h3 id=&quot;查看当前使用的源信息&quot;&gt;&lt;a href=&quot;#查看当前使用的源信息&quot; class=&quot;headerlink&quot; title=&quot;查看当前使用的源信息&quot;&gt;&lt;/a&gt;查看当前使用</summary>
+      
+    
+    
+    
+    <category term="python" scheme="https://b.51lietu.com/categories/python/"/>
+    
+    <category term="pip" scheme="https://b.51lietu.com/categories/python/pip/"/>
+    
+    
+    <category term="centos7" scheme="https://b.51lietu.com/tags/centos7/"/>
+    
+    <category term="python" scheme="https://b.51lietu.com/tags/python/"/>
+    
+    <category term="pip" scheme="https://b.51lietu.com/tags/pip/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python多环境管理-pyenv</title>
+    <link href="https://b.51lietu.com/2023/07/24/b2f5b5398176/"/>
+    <id>https://b.51lietu.com/2023/07/24/b2f5b5398176/</id>
+    <published>2023-07-24T07:53:50.000Z</published>
+    <updated>2023-08-09T03:32:47.417Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="pyenv-安装"><a href="#pyenv-安装" class="headerlink" title="pyenv 安装"></a>pyenv 安装</h2><pre><code class="bash"># 安装依赖yum install -y gcc make sqlite-devel zlib-devel bzip2-devel readline-devel# 克隆最新版(最新版配置有问题, 配置完成后,使用的还是系统默认版本)# git clone git://github.com/yyuu/pyenv.git ~/.pyenv# 使用1.2版本没有问题wget http://soft.meimg.com/pyenv-1.2.27.tar.gzwget http://soft.meimg.com/pyenv-2.2.5.tar.gz# 解压缩到指定目录tar -zxvf pyenv-2.2.5.tar.gz -C ~/mv ~/pyenv-2.2.5/ ~/.pyenvecho &#39;export PYENV_ROOT=&quot;$HOME/.pyenv&quot;&#39; &gt;&gt; ~/.bashrcecho &#39;export PATH=&quot;$PYENV_ROOT/bin:$PATH&quot;&#39; &gt;&gt; ~/.bashrcecho &#39;eval &quot;$(pyenv init --path)&quot;&#39; &gt;&gt; ~/.bashrcecho &#39;eval &quot;$(pyenv init -)&quot;&#39; &gt;&gt; ~/.bashrcexec $SHELL -l</code></pre><h3 id="安装-Python-3-8-0"><a href="#安装-Python-3-8-0" class="headerlink" title="安装 Python 3.8.0"></a>安装 Python 3.8.0</h3><pre><code class="bash"># 下载3.8版本到 pyenv缓存目录wget http://soft.meimg.com/Python-3.8.0.tar.xz -P ~/.pyenv/cache/# 缓存目录安装py3.8.0pyenv install 3.8.0 -v# 查看已安装的python版本pyenv versions</code></pre><h2 id="pyenv-使用"><a href="#pyenv-使用" class="headerlink" title="pyenv 使用"></a>pyenv 使用</h2><pre><code class="bash"># 查看版本列表pyenv install --list# 查看当前设定版本 - Python 2.7.10pyenv versions# 安装3.8版本到pyenv缓存目录wget http://soft.meimg.com/Python-3.8.0.tar.xz -P ~/.pyenv/cache/# 缓存目录安装py3.8.0pyenv install 3.8.0 -v# 卸载pyenv uninstall 3.8.0# 设置全局python版本如 3.8.0pyenv global 3.8.0# 设置为系统版本pyenv global system# 设置目录级python版本如3.8.0pyenv local 3.8.0# 取消设定pyenv local --unset# 为当前shell会话设置python版本如3.8.0pyenv shell 3.8.0</code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;pyenv-安装&quot;&gt;&lt;a href=&quot;#pyenv-安装&quot; class=&quot;headerlink&quot; title=&quot;pyenv 安装&quot;&gt;&lt;/a&gt;pyenv 安装&lt;/h2&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;# 安装依赖
+yum install -y gcc</summary>
+      
+    
+    
+    
+    <category term="python" scheme="https://b.51lietu.com/categories/python/"/>
+    
+    <category term="pyenv" scheme="https://b.51lietu.com/categories/python/pyenv/"/>
+    
+    
+    <category term="centos7" scheme="https://b.51lietu.com/tags/centos7/"/>
+    
+    <category term="python" scheme="https://b.51lietu.com/tags/python/"/>
+    
+    <category term="pyenv" scheme="https://b.51lietu.com/tags/pyenv/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Centos7静态IP配置</title>
+    <link href="https://b.51lietu.com/2023/07/24/5fbc91b36aff/"/>
+    <id>https://b.51lietu.com/2023/07/24/5fbc91b36aff/</id>
+    <published>2023-07-24T06:50:54.000Z</published>
+    <updated>2023-08-09T03:32:47.417Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="静态IP配置"><a href="#静态IP配置" class="headerlink" title="静态IP配置"></a>静态IP配置</h2><p>编辑网卡配置</p><pre><code class="bash">vim /etc/sysconfig/network-scripts/ifcfg-网卡名</code></pre><h3 id="原网卡配置"><a href="#原网卡配置" class="headerlink" title="原网卡配置"></a>原网卡配置</h3><pre><code class="bash">TYPE=&quot;Ethernet&quot;PROXY_METHOD=&quot;none&quot;BROWSER_ONLY=&quot;no&quot;BOOTPROTO=&quot;dhcp&quot;DEFROUTE=&quot;yes&quot;IPV4_FAILURE_FATAL=&quot;no&quot;IPV6INIT=&quot;yes&quot;IPV6_AUTOCONF=&quot;yes&quot;IPV6_DEFROUTE=&quot;yes&quot;IPV6_FAILURE_FATAL=&quot;no&quot;IPV6_ADDR_GEN_MODE=&quot;stable-privacy&quot;NAME=&quot;eth0&quot;UUID=&quot;76bcfd21-8d77-4cbe-9482-9600103835ca&quot;DEVICE=&quot;eth0&quot;ONBOOT=&quot;yes&quot;</code></pre><h3 id="静态IP网卡配置"><a href="#静态IP网卡配置" class="headerlink" title="静态IP网卡配置"></a>静态IP网卡配置</h3><pre><code class="bash">TYPE=&quot;Ethernet&quot;PROXY_METHOD=&quot;none&quot;BROWSER_ONLY=&quot;no&quot;BOOTPROTO=&quot;static&quot;DEFROUTE=&quot;yes&quot;IPV4_FAILURE_FATAL=&quot;no&quot;IPV6INIT=&quot;yes&quot;IPV6_AUTOCONF=&quot;yes&quot;IPV6_DEFROUTE=&quot;yes&quot;IPV6_FAILURE_FATAL=&quot;no&quot;IPV6_ADDR_GEN_MODE=&quot;stable-privacy&quot;NAME=&quot;eth0&quot;UUID=&quot;76bcfd21-8d77-4cbe-9482-9600103835ca&quot;DEVICE=&quot;eth0&quot;ONBOOT=&quot;yes&quot;IPADDR=192.168.1.228NETMASK=255.255.255.0GATEWAY=192.168.1.1DNS1=192.168.1.1DNS2=8.8.8.8</code></pre><p>重启网卡</p><pre><code class="bash">systemctl restart network</code></pre><h3 id="常见问题解决"><a href="#常见问题解决" class="headerlink" title="常见问题解决"></a>常见问题解决</h3><p>解决ping不通</p><pre><code class="bash"># 查看DNScat /etc/resolv.conf# 如果文件为空,加入dns配置# 国内移动、电信和联通通用的DNSnameserver 114.114.114.114# 美国谷歌云dnsnameserver 8.8.8.8nameserver 1.1.1.1</code></pre><p>Failed to start LSB错误解决</p><pre><code class="bash"># 关闭系统自带的网卡管理套件systemctl stop NetworkManager# 禁用开机启动systemctl disable NetworkManager</code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;静态IP配置&quot;&gt;&lt;a href=&quot;#静态IP配置&quot; class=&quot;headerlink&quot; title=&quot;静态IP配置&quot;&gt;&lt;/a&gt;静态IP配置&lt;/h2&gt;&lt;p&gt;编辑网卡配置&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;vim /etc/sysconfig/</summary>
+      
+    
+    
+    
+    <category term="centos" scheme="https://b.51lietu.com/categories/centos/"/>
+    
+    
+    <category term="centos7" scheme="https://b.51lietu.com/tags/centos7/"/>
+    
+    <category term="静态ip" scheme="https://b.51lietu.com/tags/%E9%9D%99%E6%80%81ip/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Centos7设置Hostname</title>
+    <link href="https://b.51lietu.com/2023/07/24/c50956c277cb/"/>
+    <id>https://b.51lietu.com/2023/07/24/c50956c277cb/</id>
+    <published>2023-07-24T06:47:54.000Z</published>
+    <updated>2023-08-09T03:32:47.417Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="设置hostname"><a href="#设置hostname" class="headerlink" title="设置hostname"></a>设置hostname</h2><h3 id="查看当前hostname"><a href="#查看当前hostname" class="headerlink" title="查看当前hostname"></a>查看当前hostname</h3><pre><code class="bash"># 查看静态hostnamectl --static# 查看动态hostnamectl --transient# 查看灵活hostnamectl --pretty</code></pre><h3 id="修改hostname"><a href="#修改hostname" class="headerlink" title="修改hostname"></a>修改hostname</h3><pre><code class="bash"># 会同时修改三种类型hostnamectl set-hostname Linuxidc</code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;设置hostname&quot;&gt;&lt;a href=&quot;#设置hostname&quot; class=&quot;headerlink&quot; title=&quot;设置hostname&quot;&gt;&lt;/a&gt;设置hostname&lt;/h2&gt;&lt;h3 id=&quot;查看当前hostname&quot;&gt;&lt;a href=&quot;#查看当前hostn</summary>
+      
+    
+    
+    
+    <category term="centos" scheme="https://b.51lietu.com/categories/centos/"/>
+    
+    
+    <category term="centos7" scheme="https://b.51lietu.com/tags/centos7/"/>
+    
+    <category term="hostname" scheme="https://b.51lietu.com/tags/hostname/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Centos7文件属性设置</title>
+    <link href="https://b.51lietu.com/2023/07/24/86202adc7b5d/"/>
+    <id>https://b.51lietu.com/2023/07/24/86202adc7b5d/</id>
+    <published>2023-07-24T06:37:54.000Z</published>
+    <updated>2023-08-09T03:32:47.417Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>之前，我们讲过linux的普通文件权限，但实际上，在普通的文件权限上，还有一层更高级的特殊权限(也叫隐藏权限或属性)，这个可以控制改变文件的属性，以达到更高级的功能<br>以下所有基于Centos7系统进行示例。以下就详细说说在centos7系统中的使用和表现。</p><h3 id="命令描述"><a href="#命令描述" class="headerlink" title="命令描述"></a>命令描述</h3><pre><code class="bash">功能说明：改变文件属性。语　法：chattr[-RV][-v&lt;版本编号&gt;][+/-/=&lt;属性&gt;][文件或目录...]补充说明：这项指令可改变存放在ext2文件系统上的文件或目录属性，这些属性共有以下8种模式：a 让文件或目录仅供附加用途。b 不更新文件或目录的最后存取时间。c 将文件或目录压缩后存放。d 将文件或目录排除在倾倒操作之外。i 不得任意更动文件或目录。s 失密性删除文件或目录。S 即时更新文件或目录。u 预防以外删除。参　数：-R 递归处理，将指定目录下的所有文件及子目录一并处置。-v &lt;版本编号&gt;设置文件或目录版本。-V 显示指令执行过程。+ &lt;属性&gt;开启文件或目录的该项属性。- &lt;属性&gt;关闭文件或目录的该项属性。= &lt;属性&gt;指定文件或目录的该项属性。</code></pre><h3 id="文件属性设置"><a href="#文件属性设置" class="headerlink" title="文件属性设置"></a>文件属性设置</h3><pre><code class="bash"># 查看文件添加了那些属性lsattr index.php# 这里查看被添加ia属性,这样文件不能删除,重命名都不行# ----ia-------e-- index.php# 减去a属性chattr -a index.php# 减去多余属性 保留e属性, 然后尝试就可以删除了</code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;之前，我们讲过linux的普通文件权限，但实际上，在普通的文件权限上，还有一层更高级的特殊权限(也叫隐藏权限或属性)，这个可以控制改变文件的</summary>
+      
+    
+    
+    
+    <category term="centos" scheme="https://b.51lietu.com/categories/centos/"/>
+    
+    
+    <category term="centos7" scheme="https://b.51lietu.com/tags/centos7/"/>
+    
+    <category term="文件属性" scheme="https://b.51lietu.com/tags/%E6%96%87%E4%BB%B6%E5%B1%9E%E6%80%A7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Centos7常用命令记录</title>
+    <link href="https://b.51lietu.com/2023/07/24/83a803e7c6e1/"/>
+    <id>https://b.51lietu.com/2023/07/24/83a803e7c6e1/</id>
+    <published>2023-07-24T06:17:54.000Z</published>
+    <updated>2023-08-09T03:32:47.417Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="vim-命令"><a href="#vim-命令" class="headerlink" title="vim 命令"></a>vim 命令</h3><pre><code class="bash">yum install vim</code></pre><h3 id="net-tools-命令"><a href="#net-tools-命令" class="headerlink" title="net-tools 命令"></a>net-tools 命令</h3><pre><code class="bash">yum install net-tools</code></pre><h3 id="net-tools-命令-1"><a href="#net-tools-命令-1" class="headerlink" title="net-tools 命令"></a>net-tools 命令</h3><pre><code class="bash">yum install wget</code></pre><h3 id="grep-命令"><a href="#grep-命令" class="headerlink" title="grep 命令"></a>grep 命令</h3><p>排除目录：<code>--exclude-dir</code> 排除文件：<code>--exclude</code></p><pre><code class="bash">grep -rni &#39;http&#39; --exclude-dir=.git ./grep -rni &#39;http&#39; --exclude-dir=&#123;.git,res,bin&#125; ./grep -rni &#39;http&#39; --exclude-dir=&#123;.git,res,bin&#125; ./grep -rni &#39;http&#39; --exclude=*.&#123;java,js,css&#125;</code></pre><p>文件内容查找</p><pre><code class="bash"># 查找当前目录,排除js,css文件grep -rwn &#39;opohair.co.uk&#39; --exclude=*.&#123;css,js&#125;  ./          # 排除文件.css .jsgrep -rwn &#39;opohair.co.uk&#39; --exclude-dir=&#123;.git,bin&#125;  ./      # 排除目录: .git bin</code></pre><h3 id="htop-命令"><a href="#htop-命令" class="headerlink" title="htop 命令"></a>htop 命令</h3><p>安装</p><pre><code class="bash"># 首先启用 EPEL Repositoryyum -y install epel-release# 启用 EPEL Repository 後, 可以用 yum 直接安裝 Htopyum install htop</code></pre><p>使用方式<br><img src="/img/83a803e7c6e1.png" alt="htop使用教程"></p><h3 id="ipset-命令"><a href="#ipset-命令" class="headerlink" title="ipset 命令"></a>ipset 命令</h3><p>@todo 待完善</p><h3 id="openssl-配置证书"><a href="#openssl-配置证书" class="headerlink" title="openssl 配置证书"></a>openssl 配置证书</h3><blockquote><p>官网：<a href="https://curl.se/docs/caextract.html">https://curl.se/docs/caextract.html</a></p></blockquote><pre><code class="bash"># 如果路径下没有证书，有证书最好也使用官网下载的，本地的可能信息和官网不匹配，容易验证不通过，可以官网下载，然后转换成crt证书# 修改php.ini配置# 下载证书wget http://curl.haxx.se/ca/cacert.pemmv cacert.pem /etc/pki/tls/certs/cacert.pemvim /etc/php.ini[curl]# 开启,去除前面封号curl.cainfo = /etc/pki/tls/certs/cacert.pem[openssl]openssl.cafile=/etc/pki/tls/certs/cacert.pem</code></pre><p>扩展依赖</p><pre><code class="bash"># 加密解密扩展crypto  openssl扩展sslyum install php-crypto php-ssl</code></pre><h3 id="tar-解压-压缩"><a href="#tar-解压-压缩" class="headerlink" title="tar 解压&#x2F;压缩"></a>tar 解压&#x2F;压缩</h3><p>带有特殊符号文件路径解压：<code>--force-local</code></p><h4 id="解压"><a href="#解压" class="headerlink" title="解压"></a>解压</h4><pre><code class="bash">gunzip –c db_opomall.com_2021-12-10.sql.gz &gt; db_opomall.com_2021-12-10.sql# tar文件解压 tar --force-local -xvf db_opomall.com_2021-12-10.tar# tar.gz文件解压 tar --force-local -xzvf db_opomall.com_2021-12-10.tar.gz# 解压到指定目录 tar --force-local -zxvf web_opomall.com_2021-11-27_23:08:17.tar.gz -C /home/www</code></pre><h4 id="压缩"><a href="#压缩" class="headerlink" title="压缩"></a>压缩</h4><pre><code class="bash">tar -zcvf db.wigsto_com-$(date +&quot;%Y%m%d%H%M%S&quot;).tar.gz db.wigsto_com/</code></pre><h3 id="ntp-服务器时间同步"><a href="#ntp-服务器时间同步" class="headerlink" title="ntp 服务器时间同步"></a>ntp 服务器时间同步</h3><p>同步服务器官网：<a href="https://www.pool.ntp.org/zone/asia">https://www.pool.ntp.org/zone/asia</a></p><pre><code class="bash"># 查看当前系统时间date +&quot;%Y-%m-%d %H:%M:%S&quot;# 查看同步情况ntpq -p# 安装时间同步模块yum install ntp ntpdate -y # 服务管理systemctl status ntpdsystemctl start ntpdsystemctl disabled ntpdsystemctl enable ntpd# 查看服务日志grep -i ntp /var/log/messages</code></pre><p>错误解决</p><pre><code class="bash"># 编辑配置文件vim /etc/ntp.conf# 在第一行增加,使ntp在时间差较大时依然工作tinker panic 0</code></pre><h3 id="yum-包管理"><a href="#yum-包管理" class="headerlink" title="yum 包管理"></a>yum 包管理</h3><pre><code class="bash"># 查看源列表yum repolist# 查看启用源yum repolist enabledyum repolist disabled# 启用或禁用源yum-config-manager --disable mysql-connectors-communityyum-config-manager --enable mysql57-community-dmr# 升级系统内核yum upgrade# 查看已安装包yum list installed# 查找已安装模块yum list installed|grep mariadb*# 查看已安装包数量yum list installed|wc -l# 安装程序包yum install mariadb# yum安装本地rpm包yum localinstall mydumper-0.11.3-1.el7.x86_64.rpm# 卸载程序包yum remove mariadb# 查看包信息yum info tree</code></pre><p>包缓存管理</p><pre><code class="bash"># 清理缓存,将所有的数据删除,包括元数据和软件文件yum clean all# 构建缓存yum makecache</code></pre><h3 id="rpm-包管理"><a href="#rpm-包管理" class="headerlink" title="rpm 包管理"></a>rpm 包管理</h3><pre><code class="bash"># 安装包rpm -ivh mydumper-0.11.3-1.el7.x86_64.rpm # 查找已安装的包rpm -qa | grep mydumper# 查找包是否安装rpm -q mydumper# 查看包信息rpm -qi mydumper# 查看包安装位置rpm -ql mydumper# 卸载包rpm -e mydumper</code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;vim-命令&quot;&gt;&lt;a href=&quot;#vim-命令&quot; class=&quot;headerlink&quot; title=&quot;vim 命令&quot;&gt;&lt;/a&gt;vim 命令&lt;/h3&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;yum install vim
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3</summary>
+      
+    
+    
+    
+    <category term="centos" scheme="https://b.51lietu.com/categories/centos/"/>
+    
+    
+    <category term="centos7" scheme="https://b.51lietu.com/tags/centos7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git安装</title>
+    <link href="https://b.51lietu.com/2023/07/24/eb07a0b0bcfc/"/>
+    <id>https://b.51lietu.com/2023/07/24/eb07a0b0bcfc/</id>
+    <published>2023-07-24T06:17:54.000Z</published>
+    <updated>2023-08-09T03:32:47.417Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>依赖安装</p><pre><code class="bash"># 安装yum install curl-devel expat-devel gettext-devel openssl-devel zlib-develyum install  gcc perl-ExtUtils-MakeMakeryum -y install gcc automake autoconf libtool make</code></pre><p>安装git</p><pre><code class="bash"># 卸载旧的gityum remove git# 下载源码包https://www.kernel.org/pub/software/scm/git/wget https://www.kernel.org/pub/software/scm/git/git-2.10.0.tar.gzwget http://soft.meimg.com/git-2.10.0.tar.gz    # 备份下载地址# 编译安装tar -zvxf git-2.10.0.tar.gzcd git-2.10.0make prefix=/usr/local/git allmake prefix=/usr/local/git install# 创建软连接ln -s /usr/local/git/bin/git /usr/bin/git# 查看当前Git版本git --version</code></pre><h3 id="创建ssh秘钥"><a href="#创建ssh秘钥" class="headerlink" title="创建ssh秘钥"></a>创建ssh秘钥</h3><pre><code class="bash">ssh-keygen -t rsa# 查看秘钥文件ll ~/.ssh/</code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;p&gt;依赖安装&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;# 安装
+yum install curl-devel expat-dev</summary>
+      
+    
+    
+    
+    <category term="centos" scheme="https://b.51lietu.com/categories/centos/"/>
+    
+    <category term="git" scheme="https://b.51lietu.com/categories/centos/git/"/>
+    
+    
+    <category term="centos7" scheme="https://b.51lietu.com/tags/centos7/"/>
+    
+    <category term="git" scheme="https://b.51lietu.com/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Qshell 七牛云Oss工具</title>
+    <link href="https://b.51lietu.com/2023/07/24/7e8912ef06ba/"/>
+    <id>https://b.51lietu.com/2023/07/24/7e8912ef06ba/</id>
+    <published>2023-07-24T05:53:57.000Z</published>
+    <updated>2023-08-09T03:32:47.418Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="安装与使用"><a href="#安装与使用" class="headerlink" title="安装与使用"></a>安装与使用</h2><blockquote><p>官方文档：<a href="https://developer.qiniu.com/kodo/1302/qshell#2">https://developer.qiniu.com/kodo/1302/qshell#2</a></p></blockquote><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><pre><code class="bash"># 下载软件包wget https://kodo-toolbox-new.qiniu.com/qshell-v2.12.0-linux-arm64.tar.gz# 添加环境变量vim ~/.bashrc# 写入内容export PATH=$PATH:/usr/local/bin/qshell# 环境变量立即生效source ~/.bashrc</code></pre><h3 id="工具配置"><a href="#工具配置" class="headerlink" title="工具配置"></a>工具配置</h3><pre><code class="bash"># 设置秘钥,name是账户qshell account ak sk name# 账户管理qshell user ls    # 可以列举账户下所有的账户信息qshell user cu    # 可以用来切换账户qshell user cu    # 不携带的话会切换到最近的上个账户# 开启命令的自动补全yum install bash-completion -yecho &quot;source &lt;(qshell completion bash)&quot; &gt;&gt; ~/.bashrc</code></pre><h3 id="上传"><a href="#上传" class="headerlink" title="上传"></a>上传</h3><pre><code class="bash"># back-db 存储桶名称, OSS文件名  本地文件名qshell fput back-db qiniu.jpg /Users/qiniu.jpg# 覆盖上传 --overwriteqshell fput back-db qiniu.jpg /Users/qiniu.jpg --overwrite# 低频存储 --file-type 1 (0: 标准存储， 1: 低频存储， 2: 归档存储， 3: 深度归档存储)qshell fput back-db qiniu.jpg /Users/qiniu.jpg --file-type 1</code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;安装与使用&quot;&gt;&lt;a href=&quot;#安装与使用&quot; class=&quot;headerlink&quot; title=&quot;安装与使用&quot;&gt;&lt;/a&gt;安装与使用&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;官方文档：&lt;a href=&quot;https://developer.qiniu.com/kod</summary>
+      
+    
+    
+    
+    <category term="centos" scheme="https://b.51lietu.com/categories/centos/"/>
+    
+    <category term="qshell" scheme="https://b.51lietu.com/categories/centos/qshell/"/>
+    
+    
+    <category term="centos7" scheme="https://b.51lietu.com/tags/centos7/"/>
+    
+    <category term="qshell" scheme="https://b.51lietu.com/tags/qshell/"/>
+    
+  </entry>
+  
+</feed>
