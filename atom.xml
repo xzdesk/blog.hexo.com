@@ -6,7 +6,7 @@
   <link href="https://b.51lietu.com/atom.xml" rel="self"/>
   
   <link href="https://b.51lietu.com/"/>
-  <updated>2023-08-09T03:32:47.418Z</updated>
+  <updated>2023-08-11T06:16:21.807Z</updated>
   <id>https://b.51lietu.com/</id>
   
   <author>
@@ -15,6 +15,61 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>素材资源整理</title>
+    <link href="https://b.51lietu.com/2023/08/11/3bdbb1ed4ca4/"/>
+    <id>https://b.51lietu.com/2023/08/11/3bdbb1ed4ca4/</id>
+    <published>2023-08-11T06:15:57.000Z</published>
+    <updated>2023-08-11T06:16:21.807Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://www.onlinewebfonts.com/icon">onlinewebfonts</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://www.onlinewebfonts.com/icon&quot;&gt;onlinewebfonts&lt;/a&gt;&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="vue" scheme="https://b.51lietu.com/categories/vue/"/>
+    
+    
+    <category term="vue" scheme="https://b.51lietu.com/tags/vue/"/>
+    
+    <category term="初始化" scheme="https://b.51lietu.com/tags/%E5%88%9D%E5%A7%8B%E5%8C%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vue初始化项目</title>
+    <link href="https://b.51lietu.com/2023/08/11/3b697c846e34/"/>
+    <id>https://b.51lietu.com/2023/08/11/3b697c846e34/</id>
+    <published>2023-08-11T02:46:57.000Z</published>
+    <updated>2023-08-11T06:15:09.909Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="初始化项目"><a href="#初始化项目" class="headerlink" title="初始化项目"></a>初始化项目</h2><pre><code class="bash"># 安装脚手架npm install --global vue-cli# 初始化项目vue init webpack vue-demo</code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;初始化项目&quot;&gt;&lt;a href=&quot;#初始化项目&quot; class=&quot;headerlink&quot; title=&quot;初始化项目&quot;&gt;&lt;/a&gt;初始化项目&lt;/h2&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;# 安装脚手架
+npm install --global vue-cli
+</summary>
+      
+    
+    
+    
+    <category term="vue" scheme="https://b.51lietu.com/categories/vue/"/>
+    
+    
+    <category term="vue" scheme="https://b.51lietu.com/tags/vue/"/>
+    
+    <category term="初始化" scheme="https://b.51lietu.com/tags/%E5%88%9D%E5%A7%8B%E5%8C%96/"/>
+    
+  </entry>
   
   <entry>
     <title>V2ray 安装配置</title>
@@ -571,65 +626,6 @@ yum install -y gcc</summary>
     
     
     <category term="centos7" scheme="https://b.51lietu.com/tags/centos7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Git安装</title>
-    <link href="https://b.51lietu.com/2023/07/24/eb07a0b0bcfc/"/>
-    <id>https://b.51lietu.com/2023/07/24/eb07a0b0bcfc/</id>
-    <published>2023-07-24T06:17:54.000Z</published>
-    <updated>2023-08-09T03:32:47.417Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>依赖安装</p><pre><code class="bash"># 安装yum install curl-devel expat-devel gettext-devel openssl-devel zlib-develyum install  gcc perl-ExtUtils-MakeMakeryum -y install gcc automake autoconf libtool make</code></pre><p>安装git</p><pre><code class="bash"># 卸载旧的gityum remove git# 下载源码包https://www.kernel.org/pub/software/scm/git/wget https://www.kernel.org/pub/software/scm/git/git-2.10.0.tar.gzwget http://soft.meimg.com/git-2.10.0.tar.gz    # 备份下载地址# 编译安装tar -zvxf git-2.10.0.tar.gzcd git-2.10.0make prefix=/usr/local/git allmake prefix=/usr/local/git install# 创建软连接ln -s /usr/local/git/bin/git /usr/bin/git# 查看当前Git版本git --version</code></pre><h3 id="创建ssh秘钥"><a href="#创建ssh秘钥" class="headerlink" title="创建ssh秘钥"></a>创建ssh秘钥</h3><pre><code class="bash">ssh-keygen -t rsa# 查看秘钥文件ll ~/.ssh/</code></pre>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;p&gt;依赖安装&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;# 安装
-yum install curl-devel expat-dev</summary>
-      
-    
-    
-    
-    <category term="centos" scheme="https://b.51lietu.com/categories/centos/"/>
-    
-    <category term="git" scheme="https://b.51lietu.com/categories/centos/git/"/>
-    
-    
-    <category term="centos7" scheme="https://b.51lietu.com/tags/centos7/"/>
-    
-    <category term="git" scheme="https://b.51lietu.com/tags/git/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Qshell 七牛云Oss工具</title>
-    <link href="https://b.51lietu.com/2023/07/24/7e8912ef06ba/"/>
-    <id>https://b.51lietu.com/2023/07/24/7e8912ef06ba/</id>
-    <published>2023-07-24T05:53:57.000Z</published>
-    <updated>2023-08-09T03:32:47.418Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="安装与使用"><a href="#安装与使用" class="headerlink" title="安装与使用"></a>安装与使用</h2><blockquote><p>官方文档：<a href="https://developer.qiniu.com/kodo/1302/qshell#2">https://developer.qiniu.com/kodo/1302/qshell#2</a></p></blockquote><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><pre><code class="bash"># 下载软件包wget https://kodo-toolbox-new.qiniu.com/qshell-v2.12.0-linux-arm64.tar.gz# 添加环境变量vim ~/.bashrc# 写入内容export PATH=$PATH:/usr/local/bin/qshell# 环境变量立即生效source ~/.bashrc</code></pre><h3 id="工具配置"><a href="#工具配置" class="headerlink" title="工具配置"></a>工具配置</h3><pre><code class="bash"># 设置秘钥,name是账户qshell account ak sk name# 账户管理qshell user ls    # 可以列举账户下所有的账户信息qshell user cu    # 可以用来切换账户qshell user cu    # 不携带的话会切换到最近的上个账户# 开启命令的自动补全yum install bash-completion -yecho &quot;source &lt;(qshell completion bash)&quot; &gt;&gt; ~/.bashrc</code></pre><h3 id="上传"><a href="#上传" class="headerlink" title="上传"></a>上传</h3><pre><code class="bash"># back-db 存储桶名称, OSS文件名  本地文件名qshell fput back-db qiniu.jpg /Users/qiniu.jpg# 覆盖上传 --overwriteqshell fput back-db qiniu.jpg /Users/qiniu.jpg --overwrite# 低频存储 --file-type 1 (0: 标准存储， 1: 低频存储， 2: 归档存储， 3: 深度归档存储)qshell fput back-db qiniu.jpg /Users/qiniu.jpg --file-type 1</code></pre>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;安装与使用&quot;&gt;&lt;a href=&quot;#安装与使用&quot; class=&quot;headerlink&quot; title=&quot;安装与使用&quot;&gt;&lt;/a&gt;安装与使用&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;官方文档：&lt;a href=&quot;https://developer.qiniu.com/kod</summary>
-      
-    
-    
-    
-    <category term="centos" scheme="https://b.51lietu.com/categories/centos/"/>
-    
-    <category term="qshell" scheme="https://b.51lietu.com/categories/centos/qshell/"/>
-    
-    
-    <category term="centos7" scheme="https://b.51lietu.com/tags/centos7/"/>
-    
-    <category term="qshell" scheme="https://b.51lietu.com/tags/qshell/"/>
     
   </entry>
   
