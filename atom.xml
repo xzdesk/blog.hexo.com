@@ -6,7 +6,7 @@
   <link href="https://b.51lietu.com/atom.xml" rel="self"/>
   
   <link href="https://b.51lietu.com/"/>
-  <updated>2023-08-11T06:16:21.807Z</updated>
+  <updated>2023-08-14T05:37:12.190Z</updated>
   <id>https://b.51lietu.com/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Jquery批量上传插件</title>
+    <link href="https://b.51lietu.com/2023/08/14/6b00c5537d00/"/>
+    <id>https://b.51lietu.com/2023/08/14/6b00c5537d00/</id>
+    <published>2023-08-14T06:17:54.000Z</published>
+    <updated>2023-08-14T05:37:12.190Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h2><p>stream上传插件： <a href="http://www.twinkling.cn/">http://www.twinkling.cn</a><br>WebUploader 单文件上传 <a href="http://fex.baidu.com/webuploader/">http://fex.baidu.com/webuploader/</a></p><p>参考文章：<a href="http://www.icodebang.com/article/68844.html">http://www.icodebang.com/article/68844.html</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;插件&quot;&gt;&lt;a href=&quot;#插件&quot; class=&quot;headerlink&quot; title=&quot;插件&quot;&gt;&lt;/a&gt;插件&lt;/h2&gt;&lt;p&gt;stream上传插件： &lt;a href=&quot;http://www.twinkling.cn/&quot;&gt;http://www.twinkling.cn</summary>
+      
+    
+    
+    
+    <category term="jquery" scheme="https://b.51lietu.com/categories/jquery/"/>
+    
+    
+    <category term="jquery" scheme="https://b.51lietu.com/tags/jquery/"/>
+    
+    <category term="stream" scheme="https://b.51lietu.com/tags/stream/"/>
+    
+    <category term="webuploader" scheme="https://b.51lietu.com/tags/webuploader/"/>
+    
+    <category term="upload" scheme="https://b.51lietu.com/tags/upload/"/>
+    
+  </entry>
   
   <entry>
     <title>素材资源整理</title>
@@ -600,32 +630,6 @@ yum install -y gcc</summary>
     <category term="centos7" scheme="https://b.51lietu.com/tags/centos7/"/>
     
     <category term="文件属性" scheme="https://b.51lietu.com/tags/%E6%96%87%E4%BB%B6%E5%B1%9E%E6%80%A7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Centos7常用命令记录</title>
-    <link href="https://b.51lietu.com/2023/07/24/83a803e7c6e1/"/>
-    <id>https://b.51lietu.com/2023/07/24/83a803e7c6e1/</id>
-    <published>2023-07-24T06:17:54.000Z</published>
-    <updated>2023-08-09T03:32:47.417Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="vim-命令"><a href="#vim-命令" class="headerlink" title="vim 命令"></a>vim 命令</h3><pre><code class="bash">yum install vim</code></pre><h3 id="net-tools-命令"><a href="#net-tools-命令" class="headerlink" title="net-tools 命令"></a>net-tools 命令</h3><pre><code class="bash">yum install net-tools</code></pre><h3 id="net-tools-命令-1"><a href="#net-tools-命令-1" class="headerlink" title="net-tools 命令"></a>net-tools 命令</h3><pre><code class="bash">yum install wget</code></pre><h3 id="grep-命令"><a href="#grep-命令" class="headerlink" title="grep 命令"></a>grep 命令</h3><p>排除目录：<code>--exclude-dir</code> 排除文件：<code>--exclude</code></p><pre><code class="bash">grep -rni &#39;http&#39; --exclude-dir=.git ./grep -rni &#39;http&#39; --exclude-dir=&#123;.git,res,bin&#125; ./grep -rni &#39;http&#39; --exclude-dir=&#123;.git,res,bin&#125; ./grep -rni &#39;http&#39; --exclude=*.&#123;java,js,css&#125;</code></pre><p>文件内容查找</p><pre><code class="bash"># 查找当前目录,排除js,css文件grep -rwn &#39;opohair.co.uk&#39; --exclude=*.&#123;css,js&#125;  ./          # 排除文件.css .jsgrep -rwn &#39;opohair.co.uk&#39; --exclude-dir=&#123;.git,bin&#125;  ./      # 排除目录: .git bin</code></pre><h3 id="htop-命令"><a href="#htop-命令" class="headerlink" title="htop 命令"></a>htop 命令</h3><p>安装</p><pre><code class="bash"># 首先启用 EPEL Repositoryyum -y install epel-release# 启用 EPEL Repository 後, 可以用 yum 直接安裝 Htopyum install htop</code></pre><p>使用方式<br><img src="/img/83a803e7c6e1.png" alt="htop使用教程"></p><h3 id="ipset-命令"><a href="#ipset-命令" class="headerlink" title="ipset 命令"></a>ipset 命令</h3><p>@todo 待完善</p><h3 id="openssl-配置证书"><a href="#openssl-配置证书" class="headerlink" title="openssl 配置证书"></a>openssl 配置证书</h3><blockquote><p>官网：<a href="https://curl.se/docs/caextract.html">https://curl.se/docs/caextract.html</a></p></blockquote><pre><code class="bash"># 如果路径下没有证书，有证书最好也使用官网下载的，本地的可能信息和官网不匹配，容易验证不通过，可以官网下载，然后转换成crt证书# 修改php.ini配置# 下载证书wget http://curl.haxx.se/ca/cacert.pemmv cacert.pem /etc/pki/tls/certs/cacert.pemvim /etc/php.ini[curl]# 开启,去除前面封号curl.cainfo = /etc/pki/tls/certs/cacert.pem[openssl]openssl.cafile=/etc/pki/tls/certs/cacert.pem</code></pre><p>扩展依赖</p><pre><code class="bash"># 加密解密扩展crypto  openssl扩展sslyum install php-crypto php-ssl</code></pre><h3 id="tar-解压-压缩"><a href="#tar-解压-压缩" class="headerlink" title="tar 解压&#x2F;压缩"></a>tar 解压&#x2F;压缩</h3><p>带有特殊符号文件路径解压：<code>--force-local</code></p><h4 id="解压"><a href="#解压" class="headerlink" title="解压"></a>解压</h4><pre><code class="bash">gunzip –c db_opomall.com_2021-12-10.sql.gz &gt; db_opomall.com_2021-12-10.sql# tar文件解压 tar --force-local -xvf db_opomall.com_2021-12-10.tar# tar.gz文件解压 tar --force-local -xzvf db_opomall.com_2021-12-10.tar.gz# 解压到指定目录 tar --force-local -zxvf web_opomall.com_2021-11-27_23:08:17.tar.gz -C /home/www</code></pre><h4 id="压缩"><a href="#压缩" class="headerlink" title="压缩"></a>压缩</h4><pre><code class="bash">tar -zcvf db.wigsto_com-$(date +&quot;%Y%m%d%H%M%S&quot;).tar.gz db.wigsto_com/</code></pre><h3 id="ntp-服务器时间同步"><a href="#ntp-服务器时间同步" class="headerlink" title="ntp 服务器时间同步"></a>ntp 服务器时间同步</h3><p>同步服务器官网：<a href="https://www.pool.ntp.org/zone/asia">https://www.pool.ntp.org/zone/asia</a></p><pre><code class="bash"># 查看当前系统时间date +&quot;%Y-%m-%d %H:%M:%S&quot;# 查看同步情况ntpq -p# 安装时间同步模块yum install ntp ntpdate -y # 服务管理systemctl status ntpdsystemctl start ntpdsystemctl disabled ntpdsystemctl enable ntpd# 查看服务日志grep -i ntp /var/log/messages</code></pre><p>错误解决</p><pre><code class="bash"># 编辑配置文件vim /etc/ntp.conf# 在第一行增加,使ntp在时间差较大时依然工作tinker panic 0</code></pre><h3 id="yum-包管理"><a href="#yum-包管理" class="headerlink" title="yum 包管理"></a>yum 包管理</h3><pre><code class="bash"># 查看源列表yum repolist# 查看启用源yum repolist enabledyum repolist disabled# 启用或禁用源yum-config-manager --disable mysql-connectors-communityyum-config-manager --enable mysql57-community-dmr# 升级系统内核yum upgrade# 查看已安装包yum list installed# 查找已安装模块yum list installed|grep mariadb*# 查看已安装包数量yum list installed|wc -l# 安装程序包yum install mariadb# yum安装本地rpm包yum localinstall mydumper-0.11.3-1.el7.x86_64.rpm# 卸载程序包yum remove mariadb# 查看包信息yum info tree</code></pre><p>包缓存管理</p><pre><code class="bash"># 清理缓存,将所有的数据删除,包括元数据和软件文件yum clean all# 构建缓存yum makecache</code></pre><h3 id="rpm-包管理"><a href="#rpm-包管理" class="headerlink" title="rpm 包管理"></a>rpm 包管理</h3><pre><code class="bash"># 安装包rpm -ivh mydumper-0.11.3-1.el7.x86_64.rpm # 查找已安装的包rpm -qa | grep mydumper# 查找包是否安装rpm -q mydumper# 查看包信息rpm -qi mydumper# 查看包安装位置rpm -ql mydumper# 卸载包rpm -e mydumper</code></pre>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h3 id=&quot;vim-命令&quot;&gt;&lt;a href=&quot;#vim-命令&quot; class=&quot;headerlink&quot; title=&quot;vim 命令&quot;&gt;&lt;/a&gt;vim 命令&lt;/h3&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;yum install vim
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3</summary>
-      
-    
-    
-    
-    <category term="centos" scheme="https://b.51lietu.com/categories/centos/"/>
-    
-    
-    <category term="centos7" scheme="https://b.51lietu.com/tags/centos7/"/>
     
   </entry>
   
