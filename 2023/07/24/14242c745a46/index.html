@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Centos7安装RabbitMQ | 猎图Blog</title>
-  <meta name="keywords" content=" centos7 , erlang , rabbitmq ">
-  <meta name="description" content="Centos7安装RabbitMQ | 猎图Blog">
+  <title>Css常用小技巧 | 猎图Blog</title>
+  <meta name="keywords" content=" css , 滚动条 ">
+  <meta name="description" content="Css常用小技巧 | 猎图Blog">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="小站主要用于分享提供免费ppt素材,ppt教程,ppt模板,ppt免费下载等">
 <meta property="og:type" content="website">
@@ -1326,9 +1326,9 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-Centos7安装RabbitMQ" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-Css常用小技巧" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">Centos7安装RabbitMQ</h1>
+        <h1 class="article-title">Css常用小技巧</h1>
     
     <div class="article-meta">
         
@@ -1338,9 +1338,7 @@
             <i class="iconfont icon-category"></i>
             
             
-            <a  data-rel="centos">centos</a> > 
-            
-            <a  data-rel="centos&lt;---&gt;rabbitmq">rabbitmq</a>
+            <a  data-rel="css">css</a>
             
         </span>
         
@@ -1348,18 +1346,16 @@
         <span class="tag">
             <i class="iconfont icon-tag"></i>
             
-            <a class="color3">centos7</a>
+            <a class="color4">css</a>
             
-            <a class="color2">erlang</a>
-            
-            <a class="color4">rabbitmq</a>
+            <a class="color4">滚动条</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2023-08-09 11:32:47'>2023-07-27 12:17</time>
+            发布时间 : <time class="date" title='最后更新: 2023-08-16 10:33:59'>2023-07-24 10:37</time>
         
     </div>
     <div class="article-meta">
@@ -1381,7 +1377,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%80%E4%BB%8B"><span class="toc-text">简介</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85-erlang"><span class="toc-text">安装 erlang</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85RabbitMQ"><span class="toc-text">安装RabbitMQ</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%85%8D%E7%BD%AERabbitMQ-Web%E7%AE%A1%E7%90%86%E7%95%8C%E9%9D%A2"><span class="toc-text">配置RabbitMQ Web管理界面</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%99%BB%E5%BD%95%E7%AE%A1%E7%90%86%E7%95%8C%E9%9D%A2"><span class="toc-text">登录管理界面</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9A%90%E8%97%8F%E6%BB%9A%E5%8A%A8%E6%9D%A1-%E4%BD%86%E6%98%AF%E5%8F%AF%E4%BB%A5%E6%BB%9A%E5%8A%A8"><span class="toc-text">隐藏滚动条,但是可以滚动</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9A%90%E8%97%8F%E5%88%97%E8%A1%A8%E5%A4%9A%E4%BD%99%E8%BE%B9%E8%B7%9D"><span class="toc-text">隐藏列表多余边距</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#flex-%E5%B8%83%E5%B1%80"><span class="toc-text">flex 布局</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -1397,60 +1393,108 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>RabbitMQ是一个开源的AMQP实现，服务器端用Erlang语言编写，支持多种客户端。用于在分布式系统中存储转发消息，在易用性、扩展性、高可用性等方面表现不俗。</p>
+        <h3 id="隐藏滚动条-但是可以滚动"><a href="#隐藏滚动条-但是可以滚动" class="headerlink" title="隐藏滚动条,但是可以滚动"></a>隐藏滚动条,但是可以滚动</h3><pre><code class="css">.hideScrollbar::-webkit-scrollbar &#123;
+    display: none; /* Chrome Safari */
+&#125;
+
+.hideScrollbar &#123;
+    scrollbar-width: none; /* firefox */
+    -ms-overflow-style: none; /* IE 10+ */
+    overflow-x: hidden;
+    overflow-y: auto;
+&#125;
+
+/* 容器样式 */
+.wrap&#123;width: 300px; height: 500px; background: #eee;&#125;
+.wrap p&#123;height: 1000px; width: 260px; background: #ccc;&#125;
+</code></pre>
+<pre><code class="html">&lt;div class=&quot;wrap hideScrollbar&quot;&gt;
+    &lt;p&gt;可以滚动的&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+<h3 id="隐藏列表多余边距"><a href="#隐藏列表多余边距" class="headerlink" title="隐藏列表多余边距"></a>隐藏列表多余边距</h3><pre><code class="css">html,body&#123;padding: 0; margin: 0;&#125;
+.clear &#123;clear: both;&#125;
+.clearfix::after &#123;clear: both; content: &quot;&quot;; display: block; height: 0;&#125;
+.clearfix &#123; zoom: 1;&#125;
+.wrap&#123;width: 1200px; margin: 0 auto; background: #eee; min-height: 500px; margin-top: 180px; overflow: hidden;&#125;
+
+.wrap .box&#123;width: 1300px; background: #ddd;&#125;
+.wrap .box div&#123;width: 290px; height: 200px; background: #ccc; float: left; margin-right: 13px; margin-bottom: 13px;&#125;
+</code></pre>
+<pre><code class="html">&lt;div class=&quot;wrap&quot;&gt;
+    &lt;div class=&quot;box clearfix&quot;&gt;
+        &lt;div&gt;11&lt;/div&gt;
+        &lt;div&gt;22&lt;/div&gt;
+        &lt;div&gt;33&lt;/div&gt;
+        &lt;div&gt;44&lt;/div&gt;
+        &lt;div&gt;11&lt;/div&gt;
+        &lt;div&gt;22&lt;/div&gt;
+        &lt;div&gt;33&lt;/div&gt;
+        &lt;div&gt;44&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<h3 id="flex-布局"><a href="#flex-布局" class="headerlink" title="flex 布局"></a>flex 布局</h3><p>当时设置 flex 布局之后，子元素的 float、clear、vertical-align 的属性将会失</p>
 <blockquote>
-<p>特点：</p>
-<ul>
-<li>可靠性</li>
-<li>灵活的路由</li>
-<li>消息集群</li>
-<li>高可用</li>
-<li>插件机制</li>
-<li>多种协议</li>
-<li>多语言客户端</li>
-<li>管理界面</li>
-<li>跟踪机制</li>
-</ul>
+<p>flex-direction: 决定主轴的方向(即项目的排列方向)</p>
+<blockquote>
+<p> row: 默认主轴为水平方向，起点在左端<br>  row-reverse: 主轴为水平方向,起点在右端<br>  column: 主轴为垂直方向,起点在上沿<br>  column-reverse: 主轴为垂直方向，起点在下沿</p>
 </blockquote>
-<h3 id="安装-erlang"><a href="#安装-erlang" class="headerlink" title="安装 erlang"></a>安装 erlang</h3><pre><code class="bash"># Erlang下载安装
-wget --content-disposition https://packagecloud.io/rabbitmq/erlang/packages/el/7/erlang-22.3.4.12-1.el7.x86_64.rpm/download.rpm
+</blockquote>
+<blockquote>
+<p>flex-wrap: 决定容器内项目是否可换行</p>
+<blockquote>
+<p>  nowrap: 不换行，即当主轴尺寸固定时，当空间不足时，项目尺寸会随之调整而并不会挤到下一行<br>   wrap: 项目主轴总尺寸超出容器时换行，第一行在上方<br>   wrap-reverse: 换行，第一行在下方</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>flex-flow: flex-direction 和 flex-wrap 的简写形式, 没什么用,分开写就好</p>
+</blockquote>
+<blockquote>
+<p>justify-content: 定义了项目在主轴的对齐方式</p>
+<blockquote>
+<p>   flex-start: 默认,左对齐<br>   flex-end: 右对齐<br>   center: 居中<br>   space-between: 两端对齐，项目之间的间隔相等，即剩余空间等分成间隙<br>   space-around: 每个项目两侧的间隔相等，所以项目之间的间隔比项目与边缘的间隔大一倍</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>align-items: 定义了项目在交叉轴上的对齐方式</p>
+<blockquote>
+<p>   flex-start: 交叉轴的起点对齐<br>   flex-end: 交叉轴的终点对齐<br>   center: 交叉轴的中点对齐<br>   baseline: 项目的第一行文字的基线对齐<br>   stretch: 默认值为 stretch 即如果项目未设置高度或者设为 auto,将占满整个容器的高度</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>align-content: 定义了多根轴线的对齐方式，如果项目只有一根轴线，那么该属性将不起作用</p>
+<blockquote>
+<p>   flex-start: 轴线全部在交叉轴上的起点对齐<br>   flex-end: 轴线全部在交叉轴上的终点对齐<br>   center: 轴线全部在交叉轴上的中间对齐<br>   space-between: 轴线两端对齐，之间的间隔相等，即剩余空间等分成间隙。<br>   space-around: 每个轴线两侧的间隔相等，所以轴线之间的间隔比轴线与边缘的间隔大一倍<br>   stretch: 默认值为 stretch,三条轴线平分容器的垂直方向上的空间</p>
+</blockquote>
+</blockquote>
+<pre><code class="css">html,body&#123;padding: 0; margin: 0;&#125;
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video&#123;
+border: 0;font: inherit;vertical-align: baseline;text-align: left;font-family: &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif;margin: 0;padding: 0;&#125;
+.clear &#123;clear: both;&#125;
+.clearfix::after &#123;clear: both; content: &quot;&quot;; display: block; height: 0;&#125;
+.clearfix &#123; zoom: 1;&#125;
+.wrap&#123;width: 1200px; margin: 0 auto; background: #efefef; min-height: 500px; margin-top: 60px; overflow: hidden;&#125;
 
-# rpm 包安装
-yum localinstall erlang-22.3.4.12-1.el7.x86_64.rpm
+.wrap p&#123;font-size: 14px; color: #666; padding: 5px 10px;&#125;
+
+/* flex布局样式 */
+.wrap .box&#123;width: 100%; display: -webkit-flex; /* Safari */ display: flex; flex-direction:row; flex-wrap:wrap; justify-content:space-between; background: #ddd;&#125;
+.wrap .box div&#123;width: 290px; height: 200px; background: #ccc; float: left; margin-bottom: 13px;&#125;
 </code></pre>
-<h3 id="安装RabbitMQ"><a href="#安装RabbitMQ" class="headerlink" title="安装RabbitMQ"></a>安装RabbitMQ</h3><pre><code class="bash"># RabbitMQ 下载安装
-wget --content-disposition https://packagecloud.io/rabbitmq/rabbitmq-server/packages/el/7/rabbitmq-server-3.8.13-1.el7.noarch.rpm/download.rpm
-
-# 导入Key
-rpm --import https://www.rabbitmq.com/rabbitmq-release-signing-key.asc
-
-# 安装
-yum localinstall rabbitmq-server-3.8.13-1.el7.noarch.rpm
-
-# 启动服务
-systemctl start rabbitmq-server
-
-# 设置开机自动启动
-systemctl enable rabbitmq-server
+<pre><code class="html">&lt;div class=&quot;wrap&quot;&gt;
+    &lt;div class=&quot;box&quot;&gt;
+        &lt;div&gt;11&lt;/div&gt;
+        &lt;div&gt;22&lt;/div&gt;
+        &lt;div&gt;33&lt;/div&gt;
+        &lt;div&gt;44&lt;/div&gt;
+        &lt;div&gt;11&lt;/div&gt;
+        &lt;div&gt;22&lt;/div&gt;
+        &lt;div&gt;33&lt;/div&gt;
+        &lt;div&gt;44&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
 </code></pre>
-<h3 id="配置RabbitMQ-Web管理界面"><a href="#配置RabbitMQ-Web管理界面" class="headerlink" title="配置RabbitMQ Web管理界面"></a>配置RabbitMQ Web管理界面</h3><pre><code class="bash"># 默认情况下，是没有安装web端的客户端插件，需要安装才可以生效
-rabbitmq-plugins enable rabbitmq_management
-
-# 安装完毕以后, 重启服务即可
-systemctl restart rabbitmq-server
-
-# 添加防火墙规则
-firewall-cmd --zone=public --add-port=15672/tcp --permanent
-systemctl restart firewalld
-
-# 新增用户(admin) 密码(admin123)
-rabbitmqctl add_user admin admin123
-
-# 设置用户(admin)分配操作权限
-rabbitmqctl set_user_tags admin administrator
-</code></pre>
-<h3 id="登录管理界面"><a href="#登录管理界面" class="headerlink" title="登录管理界面"></a>登录管理界面</h3><p><a target="_blank" rel="noopener" href="http://ip:15672/">http://IP:15672/</a>  输入刚创建的用户和密码</p>
-<p><img src="/img/b3c9ba929fff-1.png"></p>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 418250505@qq.com </span>
