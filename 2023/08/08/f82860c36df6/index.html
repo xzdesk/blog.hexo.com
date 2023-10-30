@@ -26,7 +26,7 @@
 
 <link href="/css/hl_theme/zenbum.css?v=1.1.0" rel="stylesheet">
 
-<link href="css/animate.min.css" rel="stylesheet">
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
 
 <script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
 <script src="/js/titleTip.js?v=1.1.0" ></script>
@@ -80,10 +80,48 @@
     <li>
         <div class="all active" data-rel="全部文章">全部文章
             
-                <small>(38)</small>
+                <small>(48)</small>
             
         </div>
     </li>
+    
+        
+            
+                
+    <li>
+        <div data-rel="漏洞">
+            <i class="fold iconfont icon-right"></i>
+            漏洞
+            <small>(1)</small>
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="漏洞&lt;---&gt;thinkcmf">
+            
+            thinkcmf
+            <small>(1)</small>
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
     
         
             
@@ -148,15 +186,30 @@
     
         
             
+        
+    
+        
+            
                 
     <li>
         <div data-rel="centos">
             <i class="fold iconfont icon-right"></i>
             centos
-            <small>(18)</small>
+            <small>(22)</small>
         </div>
         
             <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="centos&lt;---&gt;内核优化">
+            
+            内核优化
+            <small>(1)</small>
+        </div>
+        
+    </li>
+
                 
                     
     <li>
@@ -164,6 +217,17 @@
             
             docker
             <small>(2)</small>
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="centos&lt;---&gt;fail2ban">
+            
+            fail2ban
+            <small>(1)</small>
         </div>
         
     </li>
@@ -186,6 +250,17 @@
             
             mysql
             <small>(2)</small>
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="centos&lt;---&gt;nmap">
+            
+            nmap
+            <small>(1)</small>
         </div>
         
     </li>
@@ -319,6 +394,29 @@
     
         
             
+        
+    
+        
+            
+        
+    
+        
+            
+                
+    <li>
+        <div data-rel="go">
+            
+            go
+            <small>(1)</small>
+        </div>
+        
+    </li>
+
+            
+        
+    
+        
+            
                 
     <li>
         <div data-rel="jquery">
@@ -336,13 +434,76 @@
             
                 
     <li>
-        <div data-rel="lumen">
+        <div data-rel="linux">
             <i class="fold iconfont icon-right"></i>
-            lumen
+            linux
             <small>(3)</small>
         </div>
         
             <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="linux&lt;---&gt;日志分析">
+            
+            日志分析
+            <small>(1)</small>
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="linux&lt;---&gt;fail2ban">
+            
+            fail2ban
+            <small>(1)</small>
+        </div>
+        
+    </li>
+
+                
+                    
+    <li>
+        <div data-rel="linux&lt;---&gt;nmap">
+            
+            nmap
+            <small>(1)</small>
+        </div>
+        
+    </li>
+
+                
+            </ul>
+        
+    </li>
+
+            
+        
+    
+        
+            
+                
+    <li>
+        <div data-rel="lumen">
+            <i class="fold iconfont icon-right"></i>
+            lumen
+            <small>(5)</small>
+        </div>
+        
+            <ul class="sub hide">
+                
+                    
+    <li>
+        <div data-rel="lumen&lt;---&gt;组件">
+            
+            组件
+            <small>(1)</small>
+        </div>
+        
+    </li>
+
                 
                     
     <li>
@@ -438,6 +599,14 @@
         
     </li>
 
+            
+        
+    
+        
+            
+        
+    
+        
             
         
     
@@ -623,6 +792,21 @@
             
                 
     <li>
+        <div data-rel="sentry">
+            
+            sentry
+            <small>(1)</small>
+        </div>
+        
+    </li>
+
+            
+        
+    
+        
+            
+                
+    <li>
         <div data-rel="seo">
             
             seo
@@ -631,6 +815,10 @@
         
     </li>
 
+            
+        
+    
+        
             
         
     
@@ -677,7 +865,7 @@
         
     </div>
 </div>
-<input type="hidden" id="yelog_site_posts_number" value="38">
+<input type="hidden" id="yelog_site_posts_number" value="48">
 
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
@@ -728,6 +916,10 @@
     <div class="tag-wrapper">
         
             <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>查看系统信息</a>
+            </li>
+        
+            <li class="article-tag-list-item">
                 <i class="iconfont icon-tag"></i><a>常用查询</a>
             </li>
         
@@ -760,7 +952,23 @@
             </li>
         
             <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>漏洞</a>
+            </li>
+        
+            <li class="article-tag-list-item">
                 <i class="iconfont icon-tag"></i><a>慢日志</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>内核优化</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>日志分析</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>扫描工具</a>
             </li>
         
             <li class="article-tag-list-item">
@@ -773,6 +981,14 @@
         
             <li class="article-tag-list-item">
                 <i class="iconfont icon-tag"></i><a>文件属性</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>系统内核</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>系统信息</a>
             </li>
         
             <li class="article-tag-list-item">
@@ -792,7 +1008,15 @@
             </li>
         
             <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>组件</a>
+            </li>
+        
+            <li class="article-tag-list-item">
                 <i class="iconfont icon-tag"></i><a>amqp</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>base64</a>
             </li>
         
             <li class="article-tag-list-item">
@@ -820,6 +1044,10 @@
             </li>
         
             <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Fail2ban</a>
+            </li>
+        
+            <li class="article-tag-list-item">
                 <i class="iconfont icon-tag"></i><a>firewalld</a>
             </li>
         
@@ -828,11 +1056,19 @@
             </li>
         
             <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>go</a>
+            </li>
+        
+            <li class="article-tag-list-item">
                 <i class="iconfont icon-tag"></i><a>hostname</a>
             </li>
         
             <li class="article-tag-list-item">
                 <i class="iconfont icon-tag"></i><a>jquery</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Linux</a>
             </li>
         
             <li class="article-tag-list-item">
@@ -853,6 +1089,10 @@
         
             <li class="article-tag-list-item">
                 <i class="iconfont icon-tag"></i><a>nginx</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>nmap</a>
             </li>
         
             <li class="article-tag-list-item">
@@ -916,6 +1156,10 @@
             </li>
         
             <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Sentry</a>
+            </li>
+        
+            <li class="article-tag-list-item">
                 <i class="iconfont icon-tag"></i><a>seo</a>
             </li>
         
@@ -925,6 +1169,10 @@
         
             <li class="article-tag-list-item">
                 <i class="iconfont icon-tag"></i><a>stream</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>ThinkCMF</a>
             </li>
         
             <li class="article-tag-list-item">
@@ -965,6 +1213,96 @@
 
     
     <nav id="title-list-nav">
+        
+        
+        <a  class="全部文章 lumen "
+           href="/2023/09/15/42b4e7c3d51a/"
+           data-tag="lumen,base64"
+           data-author="" >
+            <span class="post-title" title="Lumen输出base64图像">Lumen输出base64图像</span>
+            <span class="post-date" title="2023-09-15 17:01:54">2023/09/15</span>
+        </a>
+        
+        
+        <a  class="全部文章 centos linux nmap nmap "
+           href="/2023/09/02/e44ff5e3ce19/"
+           data-tag="centos7,Linux,nmap,扫描工具"
+           data-author="" >
+            <span class="post-title" title="Centos7使用nmap扫描工具">Centos7使用nmap扫描工具</span>
+            <span class="post-date" title="2023-09-02 17:01:54">2023/09/02</span>
+        </a>
+        
+        
+        <a  class="全部文章 centos linux fail2ban fail2ban "
+           href="/2023/09/02/5db9f44749db/"
+           data-tag="centos7,Linux,Fail2ban"
+           data-author="" >
+            <span class="post-title" title="Fail2ban安装以及配置">Fail2ban安装以及配置</span>
+            <span class="post-date" title="2023-09-02 15:01:54">2023/09/02</span>
+        </a>
+        
+        
+        <a  class="全部文章 linux 日志分析 "
+           href="/2023/09/02/a71f0770139c/"
+           data-tag="Linux,日志分析"
+           data-author="" >
+            <span class="post-title" title="Linux日志分析">Linux日志分析</span>
+            <span class="post-date" title="2023-09-02 11:01:54">2023/09/02</span>
+        </a>
+        
+        
+        <a  class="全部文章 漏洞 thinkcmf "
+           href="/2023/08/31/2fd083aeed24/"
+           data-tag="漏洞,ThinkCMF"
+           data-author="" >
+            <span class="post-title" title="ThinkCMF漏洞处理">ThinkCMF漏洞处理</span>
+            <span class="post-date" title="2023-08-31 11:53:57">2023/08/31</span>
+        </a>
+        
+        
+        <a  class="全部文章 centos "
+           href="/2023/08/28/0035f7e2ed69/"
+           data-tag="centos7,系统信息,查看系统信息"
+           data-author="" >
+            <span class="post-title" title="Centos7系统信息查看">Centos7系统信息查看</span>
+            <span class="post-date" title="2023-08-28 14:37:54">2023/08/28</span>
+        </a>
+        
+        
+        <a  class="全部文章 centos 内核优化 "
+           href="/2023/08/28/536041a1404c/"
+           data-tag="centos7,内核优化,系统内核"
+           data-author="" >
+            <span class="post-title" title="Centos7系统内核优化">Centos7系统内核优化</span>
+            <span class="post-date" title="2023-08-28 14:37:54">2023/08/28</span>
+        </a>
+        
+        
+        <a  class="全部文章 sentry "
+           href="/2023/08/28/63c859bc9ac7/"
+           data-tag="Sentry"
+           data-author="" >
+            <span class="post-title" title="Sentry安装与使用">Sentry安装与使用</span>
+            <span class="post-date" title="2023-08-28 11:53:57">2023/08/28</span>
+        </a>
+        
+        
+        <a  class="全部文章 lumen 组件 "
+           href="/2023/08/26/e1250c3d8a2c/"
+           data-tag="lumen,组件"
+           data-author="" >
+            <span class="post-title" title="Lumen常用组件">Lumen常用组件</span>
+            <span class="post-date" title="2023-08-26 11:01:54">2023/08/26</span>
+        </a>
+        
+        
+        <a  class="全部文章 go "
+           href="/2023/08/17/4d138552d699/"
+           data-tag="centos7,go"
+           data-author="" >
+            <span class="post-title" title="Go技能储备">Go技能储备</span>
+            <span class="post-date" title="2023-08-17 17:17:54">2023/08/17</span>
+        </a>
         
         
         <a  class="全部文章 资源 自媒体 "
@@ -1363,7 +1701,7 @@
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2023-08-09 11:32:47'>2023-08-08 23:53</time>
+            发布时间 : <time class="date" title='最后更新: 2023-10-30 09:58:57'>2023-08-08 23:53</time>
         
     </div>
     <div class="article-meta">
@@ -1385,7 +1723,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#V2ray%E9%85%8D%E7%BD%AE"><span class="toc-text">V2ray配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Ubuntu-Centos7-%E5%AE%89%E8%A3%85%E5%8F%AF%E8%83%BD%E4%BC%9A%E5%A4%B1%E8%B4%A5-%E5%A4%9A%E5%B0%9D%E8%AF%95%E5%87%A0%E6%AC%A1%E4%B8%80%E8%88%AC%E4%BC%9A%E6%88%90%E5%8A%9F"><span class="toc-text">Ubuntu &amp;&amp; Centos7 (安装可能会失败,多尝试几次一般会成功)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A1%8C%E9%9D%A2%E7%AB%AF%E4%B8%8B%E8%BD%BD"><span class="toc-text">桌面端下载</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91"><span class="toc-text">端口转发</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#V2ray%E9%85%8D%E7%BD%AE"><span class="toc-text">V2ray配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Ubuntu-Centos7-%E5%AE%89%E8%A3%85%E5%8F%AF%E8%83%BD%E4%BC%9A%E5%A4%B1%E8%B4%A5-%E5%A4%9A%E5%B0%9D%E8%AF%95%E5%87%A0%E6%AC%A1%E4%B8%80%E8%88%AC%E4%BC%9A%E6%88%90%E5%8A%9F"><span class="toc-text">Ubuntu &amp;&amp; Centos7 (安装可能会失败,多尝试几次一般会成功)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A1%8C%E9%9D%A2%E7%AB%AF%E4%B8%8B%E8%BD%BD"><span class="toc-text">桌面端下载</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91"><span class="toc-text">端口转发</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B"><span class="toc-text">使用教程</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -1439,6 +1777,71 @@ wget --no-check-certificate -O gost.sh https://raw.githubusercontent.com/KANIKIG
 
 # 管理操作,执行脚本,回车
 ./gost.sh
+</code></pre>
+<h3 id="使用教程"><a href="#使用教程" class="headerlink" title="使用教程"></a>使用教程</h3><pre><code>V2Ray script v4.0 by 233boy
+Usage: v2ray [options]... [args]...
+
+基本:
+   v, version                                      显示当前版本
+   ip                                              返回当前主机的 IP
+   get-port                                        返回一个可用的端口
+
+一般:
+   a, add [protocol] [args... | auto]              添加配置
+   c, change [name] [option] [args... | auto]      更改配置
+   d, del [name]                                   删除配置**
+   i, info [name]                                  查看配置
+   qr [name]                                       二维码信息
+   url [name]                                      URL 信息
+   log                                             查看日志
+   logerr                                          查看错误日志
+
+更改:
+   dp, dynamicport [name] [start | auto] [end]     更改动态端口
+   full [name] [...]                               更改多个参数
+   id [name] [uuid | auto]                         更改 UUID
+   host [name] [domain]                            更改域名
+   port [name] [port | auto]                       更改端口
+   path [name] [path | auto]                       更改路径
+   passwd [name] [password | auto]                 更改密码
+   type [name] [type | auto]                       更改伪装类型
+   method [name] [method | auto]                   更改加密方式
+   seed [name] [seed | auto]                       更改 mKCP seed
+   new [name] [...]                                更改协议
+   web [name] [domain]                             更改伪装网站
+
+进阶:
+   dd, ddel [name...]                              删除多个配置**
+   fix [name]                                      修复一个配置
+   fix-all                                         修复全部配置
+   fix-caddyfile                                   修复 Caddyfile
+   fix-config.json                                 修复 config.json
+
+管理:
+   un, uninstall                                   卸载
+   u, update [core | sh | caddy] [ver]             更新
+   U, update.sh                                    更新脚本
+   s, status                                       运行状态
+   start, stop, restart [caddy]                    启动, 停止, 重启
+   t, test                                         测试运行
+   reinstall                                       重装脚本
+
+测试:
+   client, genc [name]                             显示用于客户端 JSON, 仅供参考
+   debug [name]                                    显示一些 debug 信息, 仅供参考
+   gen [...]                                       同等于 add, 但只显示 JSON 内容, 不创建文件, 测试使用
+   no-auto-tls [...]                               同等于 add, 但禁止自动配置 TLS, 可用于 *TLS 相关协议
+   xapi [...]                                      同等于 v2ray api, 但 API 后端使用当前运行的 V2Ray 服务
+
+其他:
+   bbr                                             启用 BBR, 如果支持
+   bin [...]                                       运行 V2Ray 命令, 例如: v2ray bin help
+   api, convert, tls, run, uuid  [...]             兼容 V2Ray 命令
+   h, help                                         显示此帮助界面
+
+谨慎使用 del, ddel, 此选项会直接删除配置; 无需确认
+反馈问题) https://github.com/233boy/v2ray/issues
+文档(doc) https://233boy.com/v2ray/v2ray-script/
 </code></pre>
 
       
